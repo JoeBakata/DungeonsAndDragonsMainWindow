@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using DungeonsAndDragons.ChartEngine.Utilities;
-
+using DungeonsAndDragons.ChartEngine.Charts;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -21,12 +10,12 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewGemChartForm : Window
     {
-        DungeonsAndDragons.ChartEngine.Charts.GetCharts ChartEngine;
+        GetCharts ChartEngine;
 
         public ViewGemChartForm()
         {
             InitializeComponent();
-            ChartEngine = new DungeonsAndDragons.ChartEngine.Charts.GetCharts();
+            ChartEngine = new GetCharts();
         }
 
         #region ButtonClick
@@ -70,15 +59,7 @@ namespace DungeonsAndDragonsMainWindow
         {
             ChangeDisplay(GemType.Ruby);
         }
-
-
-
-
-
-
-
         #endregion ButtonClick
-
 
         private void ChangeDisplay(GemType gemType)
         {
@@ -89,7 +70,6 @@ namespace DungeonsAndDragonsMainWindow
             Minimum_Roll_Valuelbl.Content = list.MinimumRollValue.ToString();
             Maximum_Roll_Valuelbl.Content = list.MaximumRollValue.ToString();
             Dicelbl.Content = list.Dice.ToString();
-
         }
 
     }

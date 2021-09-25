@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using DungeonsAndDragons.ChartEngine.Charts;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -19,12 +9,12 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewJewelryChartForm : Window
     {
-        DungeonsAndDragons.ChartEngine.Charts.GetCharts ChartEngine;
+        GetCharts ChartEngine;
 
         public ViewJewelryChartForm()
         {
             InitializeComponent();
-            ChartEngine = new DungeonsAndDragons.ChartEngine.Charts.GetCharts();
+            ChartEngine = new GetCharts();
         }
 
         #region ButtonClick
@@ -74,8 +64,6 @@ namespace DungeonsAndDragonsMainWindow
             JewleryTypelbl.Content = element.JewelryType.ToString();
             MinimumGPValuelbl.Content = element.MinimumGPValue;
             MaximumGPValuelbl.Content = element.MaximumGPValue;
-
         }
-
     }
 }

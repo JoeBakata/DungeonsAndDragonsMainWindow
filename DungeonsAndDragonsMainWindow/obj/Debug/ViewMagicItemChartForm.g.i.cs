@@ -408,7 +408,7 @@ namespace DungeonsAndDragonsMainWindow {
             this.Monster_Type_Cbtn = ((System.Windows.Controls.Button)(target));
             
             #line 22 "..\..\ViewMagicItemChartForm.xaml"
-            this.Monster_Type_Cbtn.Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            this.Monster_Type_Cbtn.Click += new System.Windows.RoutedEventHandler(this.Monster_Type_Cbtn_Click);
             
             #line default
             #line hidden
@@ -417,7 +417,7 @@ namespace DungeonsAndDragonsMainWindow {
             this.Monster_Type_Dbtn = ((System.Windows.Controls.Button)(target));
             
             #line 23 "..\..\ViewMagicItemChartForm.xaml"
-            this.Monster_Type_Dbtn.Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
+            this.Monster_Type_Dbtn.Click += new System.Windows.RoutedEventHandler(this.Monster_Type_Dbtn_Click);
             
             #line default
             #line hidden
@@ -426,7 +426,7 @@ namespace DungeonsAndDragonsMainWindow {
             this.Monster_Type_Ebtn = ((System.Windows.Controls.Button)(target));
             
             #line 24 "..\..\ViewMagicItemChartForm.xaml"
-            this.Monster_Type_Ebtn.Click += new System.Windows.RoutedEventHandler(this.Button_Click_2);
+            this.Monster_Type_Ebtn.Click += new System.Windows.RoutedEventHandler(this.Monster_Type_Ebtn_Click);
             
             #line default
             #line hidden
@@ -435,7 +435,7 @@ namespace DungeonsAndDragonsMainWindow {
             this.Monster_Type_Fbtn = ((System.Windows.Controls.Button)(target));
             
             #line 25 "..\..\ViewMagicItemChartForm.xaml"
-            this.Monster_Type_Fbtn.Click += new System.Windows.RoutedEventHandler(this.Button_Click_3);
+            this.Monster_Type_Fbtn.Click += new System.Windows.RoutedEventHandler(this.Monster_Type_Fbtn_Click);
             
             #line default
             #line hidden
@@ -444,7 +444,7 @@ namespace DungeonsAndDragonsMainWindow {
             this.Monster_Type_Gbtn = ((System.Windows.Controls.Button)(target));
             
             #line 26 "..\..\ViewMagicItemChartForm.xaml"
-            this.Monster_Type_Gbtn.Click += new System.Windows.RoutedEventHandler(this.Button_Click_4);
+            this.Monster_Type_Gbtn.Click += new System.Windows.RoutedEventHandler(this.Monster_Type_Gbtn_Click);
             
             #line default
             #line hidden

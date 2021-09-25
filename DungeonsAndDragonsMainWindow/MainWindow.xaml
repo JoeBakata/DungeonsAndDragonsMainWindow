@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Dungeons And Dragons Main Window ver:1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="278,0,0,0"/>
-        <Button x:Name="Monetary_Chartbtn" Content="Monetary Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,45,0,0" RenderTransformOrigin="0.5,0.5" Click="Monetary_Chartbtn_Click_1"/>
-        <Button Content="Jewelry Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,110,0,0" RenderTransformOrigin="0.739,0.5" Click="Button_Click"/>
-        <Button Content="Gem Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,165,0,0" Click="Button_Click_1"/>
+        <Button x:Name="Monetary_Chartbtn" Content="Monetary Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,45,0,0" RenderTransformOrigin="0.5,0.5" Click="Monetary_Chartbtn_Click"/>
+        <Button Content="Jewelry Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,110,0,0" RenderTransformOrigin="0.739,0.5" Click="Jewelry_Chartbtn_Click"/>
+        <Button Content="Gem Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,165,0,0" Click="Gem_Chartbtn_Click"/>
         <Button x:Name="Magic_Item_Chartbtn" Content="Magic Item Chart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,220,0,0" Click="Magic_Item_Chartbtn_Click"/>
 
     </Grid>

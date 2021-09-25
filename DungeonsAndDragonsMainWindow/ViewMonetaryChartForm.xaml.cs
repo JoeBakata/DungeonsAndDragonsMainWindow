@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using DungeonsAndDragons.ChartEngine.Utilities;
+using DungeonsAndDragons.ChartEngine.Charts;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -19,33 +9,24 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewMonetaryChartForm : Window
     {
-        
-        DungeonsAndDragons.ChartEngine.Charts.GetCharts ChartEngine;
-
-        DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes MonsterTypes;
+        GetCharts ChartEngine;
+        MonsterTypes MonsterTypes;
 
         public ViewMonetaryChartForm()
         {
             InitializeComponent();
-            ChartEngine = new DungeonsAndDragons.ChartEngine.Charts.GetCharts();
-
+            ChartEngine = new GetCharts();
         }
 
-        #region ButtonClicks
-
-
-        private void Monster_Type_Abtn_Click(object sender, RoutedEventArgs e)
+        #region MonetaryButtonClicks
+        private void Copperbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.A;
-            ChangeMonsterType("Monster Type A:");
+            ChangeDisplay("Copper");
         }
 
-
-        private void Monster_Type_Bbtn_Click(object sender, RoutedEventArgs e)
+        private void Silverbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.B;
-            ChangeMonsterType("Monster Type B:");
-
+            ChangeDisplay("Silver");
         }
 
         private void Electrumbtn_Click(object sender, RoutedEventArgs e)
@@ -62,162 +43,142 @@ namespace DungeonsAndDragonsMainWindow
         {
             ChangeDisplay("Platinum");
         }
+        #endregion MonetaryButtonClicks
 
-
-
-        private void Copperbtn_Click(object sender, RoutedEventArgs e)
+        #region Monsters_A_To_K_ButtonClicks
+        private void Monster_Type_Abtn_Click(object sender, RoutedEventArgs e)
         {
-            ChangeDisplay("Copper");
+            MonsterTypes = MonsterTypes.A;
+            ChangeMonsterType("Monster Type A:");
         }
 
-        private void Silverbtn_Click(object sender, RoutedEventArgs e)
+        private void Monster_Type_Bbtn_Click(object sender, RoutedEventArgs e)
         {
-            ChangeDisplay("Silver");
+            MonsterTypes = MonsterTypes.B;
+            ChangeMonsterType("Monster Type B:");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Monster_Type_Cbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.C;
+            MonsterTypes = MonsterTypes.C;
             ChangeMonsterType("Monster Type C:");
-
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Monster_Type_Dbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.D;
+            MonsterTypes = MonsterTypes.D;
             ChangeMonsterType("Monster Type D:");
-
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Monster_Type_Ebtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.E;
+            MonsterTypes = MonsterTypes.E;
             ChangeMonsterType("Monster Type E:");
-
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Monster_Type_Fbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.F;
+            MonsterTypes = MonsterTypes.F;
             ChangeMonsterType("Monster Type F:");
-
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Monster_Type_Gbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.G;
+            MonsterTypes = MonsterTypes.G;
             ChangeMonsterType("Monster Type G:");
-
         }
 
         private void Monster_Type_Hbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.H;
+            MonsterTypes = MonsterTypes.H;
             ChangeMonsterType("Monster Type H:");
-
         }
 
         private void Monster_Type_Ibtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.I;
+            MonsterTypes = MonsterTypes.I;
             ChangeMonsterType("Monster Type I:");
-
         }
 
         private void Monster_Type_Jbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.J;
+            MonsterTypes = MonsterTypes.J;
             ChangeMonsterType("Monster Type J:");
-
         }
 
         private void Monster_Type_Kbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.K;
+            MonsterTypes = MonsterTypes.K;
             ChangeMonsterType("Monster Type K:");
-
         }
-
+        #endregion Monsters_A_TO_K_ButtonClick
+        #region Monsters_L_To_V_ButtonClicks
         private void Monster_Type_Lbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.L;
+            MonsterTypes = MonsterTypes.L;
             ChangeMonsterType("Monster Type L:");
-
         }
 
         private void Monster_Type_Mbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.M;
+            MonsterTypes = MonsterTypes.M;
             ChangeMonsterType("Monster Type M:");
-
         }
 
         private void Monster_Type_Nbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.N;
+            MonsterTypes = MonsterTypes.N;
             ChangeMonsterType("Monster Type N:");
-
         }
 
         private void Monster_Type_Obtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.O;
+            MonsterTypes = MonsterTypes.O;
             ChangeMonsterType("Monster Type O:");
-
         }
 
         private void Monster_Type_Pbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.P;
+            MonsterTypes = MonsterTypes.P;
             ChangeMonsterType("Monster Type P:");
-
         }
 
         private void Monster_Type_Qbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.Q;
+            MonsterTypes = MonsterTypes.Q;
             ChangeMonsterType("Monster Type Q:");
-
         }
 
         private void Monster_Type_Rbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.R;
+            MonsterTypes = MonsterTypes.R;
             ChangeMonsterType("Monster Type R:");
-
         }
 
         private void Monster_Type_Sbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.S;
+            MonsterTypes = MonsterTypes.S;
             ChangeMonsterType("Monster Type S:");
-
         }
 
         private void Monster_Type_Tbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.T;
+            MonsterTypes = MonsterTypes.T;
             ChangeMonsterType("Monster Type T:");
-
         }
 
         private void Monster_Type_Ubtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.U;
+            MonsterTypes = MonsterTypes.U;
             ChangeMonsterType("Monster Type U:");
-
         }
 
         private void Monster_Type_Vbtn_Click(object sender, RoutedEventArgs e)
         {
-            MonsterTypes = DungeonsAndDragons.ChartEngine.Utilities.MonsterTypes.V;
+            MonsterTypes = MonsterTypes.V;
             ChangeMonsterType("Monster Type V:");
-
         }
-
-
-
-        #endregion ButtonClicks
+        #endregion Monsters_L_To_V_ButtonClicks
 
         private void ChangeDisplay(string treasure)
         {
@@ -238,8 +199,6 @@ namespace DungeonsAndDragonsMainWindow
         private void ChangeMonsterType(string monsterCategory)
         {
             Monster_Typelbl.Content = monsterCategory;
-
         }
-
     }
 }

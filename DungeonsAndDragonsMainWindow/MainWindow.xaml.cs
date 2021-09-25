@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -25,25 +12,22 @@ namespace DungeonsAndDragonsMainWindow
             InitializeComponent();
         }
 
-        private void Monetary_Chartbtn_Click_1(object sender, RoutedEventArgs e)
+        private void Monetary_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
             ViewMonetaryChartForm monetaryTreasureChartForm = new ViewMonetaryChartForm();
             monetaryTreasureChartForm.ShowDialog();
-
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Gem_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
             ViewGemChartForm viewGemChartForm = new ViewGemChartForm();
             viewGemChartForm.ShowDialog();
-
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Jewelry_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
             ViewJewelryChartForm viewJewelryChartForm = new ViewJewelryChartForm();
             viewJewelryChartForm.ShowDialog();
-
         }
 
         private void Magic_Item_Chartbtn_Click(object sender, RoutedEventArgs e)
