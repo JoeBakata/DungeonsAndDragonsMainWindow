@@ -24,5 +24,32 @@ namespace DungeonsAndDragonsMainWindow
         {
             InitializeComponent();
         }
+
+        private void Monetary_Chartbtn_Click_1(object sender, RoutedEventArgs e)
+        {
+            ViewMonetaryChartForm monetaryTreasureChartForm = new ViewMonetaryChartForm();
+            monetaryTreasureChartForm.ShowDialog();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ViewGemChartForm viewGemChartForm = new ViewGemChartForm();
+            viewGemChartForm.ShowDialog();
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ViewJewelryChartForm viewJewelryChartForm = new ViewJewelryChartForm();
+            viewJewelryChartForm.ShowDialog();
+
+        }
+
+        private void Magic_Item_Chartbtn_Click(object sender, RoutedEventArgs e)
+        {
+            ViewMagicItemChartForm viewMagicItemChartForm = new ViewMagicItemChartForm();
+            viewMagicItemChartForm.ShowDialog();
+        }
     }
 }

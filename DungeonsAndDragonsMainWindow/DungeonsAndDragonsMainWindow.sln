@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonsAndDragonsMainWindow", "DungeonsAndDragonsMainWindow.csproj", "{384A68B7-FE97-4405-9B56-0B08B46DB120}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExistingProjects", "ExistingProjects", "{2B7F0F7F-7BF3-4A15-AA44-25F7C2A71834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonsAndDragons.ChartEngine", "..\..\DungeonsAndDragons.ChartEngine\DungeonsAndDragons.ChartEngine\DungeonsAndDragons.ChartEngine\DungeonsAndDragons.ChartEngine.csproj", "{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{384A68B7-FE97-4405-9B56-0B08B46DB120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384A68B7-FE97-4405-9B56-0B08B46DB120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384A68B7-FE97-4405-9B56-0B08B46DB120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{271B5E26-23A0-4602-9CF6-7D9DE0EC38BE} = {2B7F0F7F-7BF3-4A15-AA44-25F7C2A71834}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9B9DDFC-743A-4021-B0C8-36CC23A225AA}
