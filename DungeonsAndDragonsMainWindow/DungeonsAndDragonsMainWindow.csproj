@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RadioButtonView\ViewGemChartForm.xaml.cs">
+      <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonView\ViewJewelryChartForm.xaml.cs">
+      <DependentUpon>ViewJewelryChartForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonView\ViewMagicItemChartForm.xaml.cs">
+      <DependentUpon>ViewMagicItemChartForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonView\ViewMonetaryChartForm.xaml.cs">
+      <DependentUpon>ViewMonetaryChartForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewGemChartForm.xaml.cs">
       <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
     </Compile>
@@ -79,6 +91,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RadioButtonView\ViewGemChartForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadioButtonView\ViewJewelryChartForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadioButtonView\ViewMagicItemChartForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadioButtonView\ViewMonetaryChartForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewGemChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,5 +156,6 @@
       <Name>DungeonsAndDragons.ChartEngine</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

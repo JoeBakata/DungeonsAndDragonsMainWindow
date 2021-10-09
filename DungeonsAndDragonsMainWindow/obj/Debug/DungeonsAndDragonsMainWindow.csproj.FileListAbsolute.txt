@@ -20,7 +20,6 @@ C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Dunge
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewGemChartForm.g.cs
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewMonetaryChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewGemChartForm.baml
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\DungeonsAndDragonsMainWindow.csproj.CopyComplete
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\GemValueData.txt
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\JewelryValueData.txt
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\MagicItemData.txt
@@ -30,3 +29,11 @@ C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewJ
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewJewelryChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewMagicItemChartForm.g.cs
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewMagicItemChartForm.baml
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewGemChartForm.g.cs
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewJewelryChartForm.g.cs
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMagicItemChartForm.g.cs
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMonetaryChartForm.g.cs
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewGemChartForm.baml
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewJewelryChartForm.baml
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMagicItemChartForm.baml
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMonetaryChartForm.baml

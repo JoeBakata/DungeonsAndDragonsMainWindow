@@ -7,11 +7,14 @@
         mc:Ignorable="d"
         Title="ViewMagicItemChartForm" Height="1000" Width="1200">
     <Grid>
-        <Label x:Name="Dicebtn" Content="Dicelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,90,0,0" Width="160"/>
-        <Label x:Name="Magic_Item_Typesbtn" Content="Magic_Item_Typeslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,120,0,0" Width="160"/>
-        <Label x:Name="Minimum_Roll_Valuebtn" Content="Minimum_Roll_Valuelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,150,0,0" Width="160"/>
-        <Label x:Name="Maximum_Roll_Valuebtn" Content="Maximum_Roll_Valuelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,180,0,0" Width="160"/>
-        <Label x:Name="Magic_Item_Subtable_Namebtn" Content="Magic_Item_Subtable_Namelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,210,0,0" Width="160"/>
+        <Label x:Name="Monsterlbl" Content="Monsterlbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,60,0,0" Width="160"/>
+        <Label x:Name="Dicelbl" Content="Dicelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,90,0,0" Width="160"/>
+        <Label x:Name="Percentlbl" Content="Percentlbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,120,0,0" Width="160"/>
+        <Label x:Name="Any_Magic_Itemslbl" Content="AnyMagicItemslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,150,0,0" Width="160"/>
+        <Label x:Name="Except_Weaponslbl" Content="ExceptWeaponslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,180,0,0" Width="160"/>
+        <Label x:Name="Number_Of_Rollslbl" Content="NumberOfRollslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,210,0,0" Width="160"/>
+        <Label x:Name="Max_Roll_Valuelbl" Content="MaxRollValuelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,240,0,0" Width="160"/>
+        <Label x:Name="Magic_Item_Types_Formatted" Content="MagicItemTypesFormatted" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,270,0,0" Width="160"/>
         <Button x:Name="Monster_Type_Abtn" Content="Monster Type A:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" RenderTransformOrigin="1,10.25" Margin="25,45,0,0" Click="Monster_Type_Abtn_Click" Height="25"/>
         <Button x:Name="Monster_Type_Bbtn" Content="Monster Type B:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.4,1" Margin="25,86,0,0" Click="Monster_Type_Bbtn_Click" Height="25"/>
         <Button x:Name="Copperbtn" Content="Copper:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,15,0,0" Click="Copperbtn_Click"/>

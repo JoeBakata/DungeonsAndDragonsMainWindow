@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\App.xaml
-5-1273246490
+9-1002491154
 
-1030685966
+14-1111717315
 14-77320586
-MainWindow.xaml;ViewGemChartForm.xaml;ViewJewelryChartForm.xaml;ViewMagicItemChartForm.xaml;ViewMonetaryChartForm.xaml;
+MainWindow.xaml;RadioButtonView\ViewGemChartForm.xaml;RadioButtonView\ViewJewelryChartForm.xaml;RadioButtonView\ViewMagicItemChartForm.xaml;RadioButtonView\ViewMonetaryChartForm.xaml;ViewGemChartForm.xaml;ViewJewelryChartForm.xaml;ViewMagicItemChartForm.xaml;ViewMonetaryChartForm.xaml;
 
 True
 
