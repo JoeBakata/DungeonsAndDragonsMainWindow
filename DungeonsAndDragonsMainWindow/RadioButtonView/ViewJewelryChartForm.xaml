@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow.RadioButtonView"
         mc:Ignorable="d"
-        Title="ViewJewelryChartForm" Height="450" Width="800">
-    <Grid>
+        Title="ViewJewelryChartForm" Height="1000" Width="1200">
+    <Grid> 
+         <!-- startOf Labels --> <!-- todo 2. Lots of work for this one yet. See below about the monsters. Why no dice roll for value or percentage chance?-->
+        <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,100,0,0"/>
+        <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="270,140,0,0"/>
+        <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,180,0,0"/>
+        <!-- endOf Labels -->  
         
+         <!-- startOf Changing values -->
+        <Label x:Name="Jewlery_Typelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
+        <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
+        <Label x:Name="Maximum_GP_Valuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
+        <!-- endOf Changing values -->
+        
+         <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
+        <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Broochrdbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,160,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Earringrdbtn" Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,190,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Pendantrdbtn" Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,220,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Necklacerdbtn" Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,250,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Crownrdbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,280,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Sceptrerdbtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,310,0,0" Checked="SelectionTypeDisplay"/>
+         <!-- endOf Types of jewelry radio buttons -->
     </Grid>
 </Window>

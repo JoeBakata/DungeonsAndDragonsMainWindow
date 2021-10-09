@@ -64,8 +64,8 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
         }
         private void ChangeDisplay(GemType gemType)
         {
-            List<GemValue> gemTreasuers = ChartEngine.GemGPValueChart;
-            GemValue list = gemTreasuers.First(x => x.GemType == gemType);
+            List<GemValue> gemTreasures = ChartEngine.GemGPValueChart;
+            GemValue list = gemTreasures.First(x => x.GemType == gemType);
             Gem_Typelbl.Content = gemType;
             Minimum_GP_Valuelbl.Content = list.MinimumGPValue;
             Minimum_Roll_Valuelbl.Content = list.MinimumRollValue;

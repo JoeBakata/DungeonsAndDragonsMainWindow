@@ -7,16 +7,23 @@
         mc:Ignorable="d"
         Title="ViewGemChartForm" Height="1000" Width="1200">
     <Grid>
+        <!-- startOf Lables --> <!--todo 1. this file still needs work.-->
+        <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,100,0,0"/>
+        <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,140,0,0"/>
+        <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,180,0,0"/>
+        <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,220,0,0"/>
+        <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,260,0,0"/>
+        <!-- endOf Labels -->
+        
+        <!-- startOf  Changing values-->
             <Label x:Name="Gem_Typelbl" Content="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,100,0,0"/>
             <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,140,0,0"/>
             <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
             <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,220,0,0"/>
             <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,260,0,0"/>
-            <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,100,0,0"/>
-            <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,140,0,0"/>
-            <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,180,0,0"/>
-            <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,220,0,0"/>
-            <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,260,0,0"/>
+        <!-- endOf Changing Values -->
+        
+        <!--  -->
             <RadioButton x:Name="Quartzrdbtn" Content="Quartz" HorizontalAlignment="Left" Margin="65,90,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Turqoiserdbtn" Content="Turquoise" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Citrinerdbtn" Content="Citrine" HorizontalAlignment="Left" Margin="65,150,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
