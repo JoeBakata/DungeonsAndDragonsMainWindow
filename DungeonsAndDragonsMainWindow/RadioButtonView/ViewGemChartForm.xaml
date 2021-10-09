@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow.RadioButtonView"
         mc:Ignorable="d"
-        Title="ViewGemChartForm" Height="450" Width="800">
+        Title="ViewGemChartForm" Height="1000" Width="1200">
     <Grid>
-        
+            <Label x:Name="Gem_Typelbl" Content="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,100,0,0"/>
+            <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,140,0,0"/>
+            <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
+            <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,220,0,0"/>
+            <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,260,0,0"/>
+            <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,100,0,0"/>
+            <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,140,0,0"/>
+            <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,180,0,0"/>
+            <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,220,0,0"/>
+            <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="270,260,0,0"/>
+            <RadioButton x:Name="Quartzrdbtn" Content="Quartz" HorizontalAlignment="Left" Margin="65,90,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Turqoiserdbtn" Content="Turquoise" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Citrinerdbtn" Content="Citrine" HorizontalAlignment="Left" Margin="65,150,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Onyxrdbtn" Content="Onyx" HorizontalAlignment="Left" Margin="65,180,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Amberrdbtn" Content="Amber" HorizontalAlignment="Left" Margin="65,210,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Garnetrdbtn" Content="Garnet" HorizontalAlignment="Left" Margin="65,240,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Pearlrdbtn" Content="Pearl" HorizontalAlignment="Left" Margin="65,270,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Topazrdbtn" Content="Topaz" HorizontalAlignment="Left" Margin="65,300,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Opelrdbtn" Content="Opel" HorizontalAlignment="Left" Margin="65,330,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+            <RadioButton x:Name="Rubyrdbtn" Content="Ruby" HorizontalAlignment="Left" Margin="65,360,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
     </Grid>
 </Window>

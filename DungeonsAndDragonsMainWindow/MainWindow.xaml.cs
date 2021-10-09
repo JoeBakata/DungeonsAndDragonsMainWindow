@@ -14,19 +14,19 @@ namespace DungeonsAndDragonsMainWindow
 
         private void Monetary_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            ViewMonetaryChartForm monetaryTreasureChartForm = new ViewMonetaryChartForm();
+            RadioButtonView.ViewMonetaryChartForm monetaryTreasureChartForm = new RadioButtonView.ViewMonetaryChartForm();
             monetaryTreasureChartForm.ShowDialog();
         }
 
         private void Gem_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            ViewGemChartForm viewGemChartForm = new ViewGemChartForm();
+            RadioButtonView.ViewGemChartForm viewGemChartForm = new RadioButtonView.ViewGemChartForm();// Changed namespace to RadioButtonView. to get the raidoButtons
             viewGemChartForm.ShowDialog();
         }
 
         private void Jewelry_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            ViewJewelryChartForm viewJewelryChartForm = new ViewJewelryChartForm();
+            RadioButtonView.ViewJewelryChartForm viewJewelryChartForm = new RadioButtonView.ViewJewelryChartForm();
             viewJewelryChartForm.ShowDialog();
         }
 
