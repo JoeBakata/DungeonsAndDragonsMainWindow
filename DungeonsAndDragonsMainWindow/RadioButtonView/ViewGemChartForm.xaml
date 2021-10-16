@@ -23,7 +23,7 @@
             <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,260,0,0"/>
         <!-- endOf Changing Values -->
         
-        <!--  -->
+        <!-- startOf gemRadioButtons -->
             <RadioButton x:Name="Quartzrdbtn" Content="Quartz" HorizontalAlignment="Left" Margin="65,90,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Turqoiserdbtn" Content="Turquoise" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Citrinerdbtn" Content="Citrine" HorizontalAlignment="Left" Margin="65,150,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
@@ -34,5 +34,6 @@
             <RadioButton x:Name="Topazrdbtn" Content="Topaz" HorizontalAlignment="Left" Margin="65,300,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Opelrdbtn" Content="Opel" HorizontalAlignment="Left" Margin="65,330,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
             <RadioButton x:Name="Rubyrdbtn" Content="Ruby" HorizontalAlignment="Left" Margin="65,360,0,0" VerticalAlignment="Top" Checked="SelectionTypeDisplay"/>
+        <!-- endOf gemRadioButtons -->
     </Grid>
 </Window>

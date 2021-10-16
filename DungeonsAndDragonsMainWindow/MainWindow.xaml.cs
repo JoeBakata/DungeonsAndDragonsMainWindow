@@ -20,7 +20,7 @@ namespace DungeonsAndDragonsMainWindow
 
         private void Gem_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            RadioButtonView.ViewGemChartForm viewGemChartForm = new RadioButtonView.ViewGemChartForm();
+            ViewGemChartForm viewGemChartForm = new ViewGemChartForm();
             viewGemChartForm.ShowDialog();
         }
 

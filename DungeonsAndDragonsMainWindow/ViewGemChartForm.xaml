@@ -6,12 +6,7 @@
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow"
         mc:Ignorable="d"
         Title="ViewGemChartForm" Height="1000" Width="1200">
-    <Grid>
-        <Label x:Name="Gem_Typelbl" Content="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,150,0,0"/>
-        <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,180,0,0"/>
-        <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,210,0,0"/>
-        <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,240,0,0"/>
-        <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,270,0,0"/>
+    <Grid> <!-- startOf gemButtons -->
         <Button x:Name="Quartzbtn" Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,153,0,0" Click="Btn_Click_Quartz" />
         <Button x:Name="Turqoisebtn" Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,183,0,0" Click="Btn_Click_Turquoise" />
         <Button x:Name="Citrinebtn" Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,213,0,0" Click="Btn_Click_Citrine"/>
@@ -22,11 +17,55 @@
         <Button x:Name="Topazbtn" Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,363,0,0" Click="Btn_Click_Topaz"/>
         <Button x:Name="Opalbtn" Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,393,0,0" Click="Btn_Click_Opel"/>
         <Button x:Name="Rubybtn" Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,423,0,0" Click="Btn_Click_Ruby"/>
-        <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="262,151,0,0"/>
-        <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="262,181,0,0"/>
-        <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="262,211,0,0"/>
-        <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="262,241,0,0"/>
-        <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="262,271,0,0"/>
+        <!-- endOf gemButtons -->
+        
+        <!-- startOf Labels-->
+        <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,153,0,0"/>
+        <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,183,0,0"/>
+        <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,213,0,0"/>
+        <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,243,0,0"/>
+        <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,273,0,0"/>
+        <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,303,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click"/>
+        <!-- endof Lables -->
 
+        <!-- startOf changingValues -->
+        <Label x:Name="Gem_Typelbl" Content="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,150,0,0"/>
+        <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,180,0,0"/>
+        <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,210,0,0"/>
+        <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0"/>
+        <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0"/>
+        <Label x:Name="User_Dice_Roll" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,300,0,0" VerticalAlignment="Top" Width="80"/>
+        <!-- endOf changingValues -->
+
+        <!-- startOf monsterTypesA-K -->
+        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,150,0,0" Click="MonsterTypeA" />
+        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,180,0,0" Click="MonsterTypeB" />
+        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,210,0,0" Click="MonsterTypeC" />
+        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,240,0,0" Click="MonsterTypeD" />
+        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,270,0,0" Click="MonsterTypeE" />
+        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,300,0,0" Click="MonsterTypeF" />
+        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,330,0,0" Click="MonsterTypeG" />
+        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,360,0,0" Click="MonsterTypeH" />
+        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,390,0,0" Click="MonsterTypeI" />
+        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,420,0,0" Click="MonsterTypeJ" />
+        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,450,0,0" Click="MonsterTypeK" />
+        <!-- endOf monsterTypesA-K -->
+        
+        <!-- startOf monsterTypesL-V -->
+        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,150,0,0" Click="MonsterTypeL" />
+        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,180,0,0" Click="MonsterTypeM" />
+        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,210,0,0" Click="MonsterTypeN" />
+        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,240,0,0" Click="MonsterTypeO" />
+        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,270,0,0" Click="MonsterTypeP" />
+        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,300,0,0" Click="MonsterTypeQ" />
+        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,330,0,0" Click="MonsterTypeR" />
+        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,360,0,0" Click="MonsterTypeS" />
+        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,390,0,0" Click="MonsterTypeT" />
+        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,420,0,0" Click="MonsterTypeU" />
+        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,450,0,0" Click="MonsterTypeV" />
+        <!-- endOf monsterTypesM-V -->
+        
+        <Label Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
+<!-- add the rest of the monster types and the corisponding methods -->
     </Grid>
 </Window>
