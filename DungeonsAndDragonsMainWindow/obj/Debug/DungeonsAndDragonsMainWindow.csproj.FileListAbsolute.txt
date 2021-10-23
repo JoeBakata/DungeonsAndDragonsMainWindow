@@ -37,3 +37,4 @@ C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\Radio
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewJewelryChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMagicItemChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMonetaryChartForm.baml
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\DungeonsAndDragonsMainWindow.csproj.CopyComplete

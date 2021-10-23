@@ -26,6 +26,8 @@
         <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,243,0,0"/>
         <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,273,0,0"/>
         <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,303,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click"/>
+        <Label Content="Percentage Roll:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,333,0,0"/>
+        <Label Content="NumberOfGems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,363,0,0"/>
         <!-- endof Lables -->
 
         <!-- startOf changingValues -->
@@ -35,6 +37,8 @@
         <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0"/>
         <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0"/>
         <Label x:Name="User_Dice_Roll" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,300,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="Percentage_Roll" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,330,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="NumberOfGems" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,360,0,0" VerticalAlignment="Top" Width="80"/>
         <!-- endOf changingValues -->
 
         <!-- startOf monsterTypesA-K -->
@@ -65,7 +69,33 @@
         <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,450,0,0" Click="MonsterTypeV" />
         <!-- endOf monsterTypesM-V -->
         
-        <Label Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
+        <!-- startOf gemLabels -->
+        <Label Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,453,0,0"/>
+        <Label Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,483,0,0"/>
+        <Label Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,513,0,0"/>
+        <Label Content="Onyx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,543,0,0"/>
+        <Label Content="Amber" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,573,0,0"/>
+        <Label Content="Garnet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,603,0,0"/>
+        <Label Content="Pearl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,633,0,0"/>
+        <Label Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,663,0,0"/>
+        <Label Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,693,0,0"/>
+        <Label Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,723,0,0"/>
+<!-- endOf gemLabels -->
+
+        <!-- startOf gemLabelsDynamic -->
+        <Label x:Name="Quartz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,453,0,0"/>
+        <Label x:Name="Turquoise" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,483,0,0"/>
+        <Label x:Name="Citrine" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,513,0,0"/>
+        <Label x:Name="Onyx" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,543,0,0"/>
+        <Label x:Name="Amber" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,573,0,0"/>
+        <Label x:Name="Garnet" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,603,0,0"/>
+        <Label x:Name="Pearl" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,633,0,0"/>
+        <Label x:Name="Topaz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,663,0,0"/>
+        <Label x:Name="Opal" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,693,0,0"/>
+        <Label x:Name="Ruby" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,723,0,0"/>
+<!-- endOf gemLabelsDynamic -->
+
+        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
 <!-- add the rest of the monster types and the corisponding methods -->
     </Grid>
 </Window>
