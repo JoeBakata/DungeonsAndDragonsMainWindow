@@ -11,15 +11,75 @@
         <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,100,0,0"/>
         <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="270,140,0,0"/>
         <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,180,0,0"/>
+        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,220,0,0" Click="Roll_Click"/>
+        <Label Content="Number_Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,260,0,0"/>
+        <Label Content="Percentage_Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,300,0,0"/>
+        <Label Content="Number_Of_Jewelry:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,340,0,0"/>
         <!-- endOf Labels -->  
         
          <!-- startOf Changing values -->
         <Label x:Name="Jewlery_Typelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
         <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
         <Label x:Name="Maximum_GP_Valuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
+        <Label x:Name="Number_Rolled" Content="NumberRolled" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="Percentage_Rolled" Content="PercentageRolled" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label x:Name="Number_Of_Jewelry" Content="NumberOfJewelry" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
+
         <!-- endOf Changing values -->
-        
-         <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
+
+        <!-- startOf monsterTypesA-K -->
+        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,150,0,0" Click="MonsterTypeA" />
+        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,180,0,0" Click="MonsterTypeB" />
+        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,210,0,0" Click="MonsterTypeC" />
+        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,240,0,0" Click="MonsterTypeD" />
+        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,270,0,0" Click="MonsterTypeE" />
+        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,300,0,0" Click="MonsterTypeF" />
+        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,330,0,0" Click="MonsterTypeG" />
+        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,360,0,0" Click="MonsterTypeH" />
+        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,390,0,0" Click="MonsterTypeI" />
+        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,420,0,0" Click="MonsterTypeJ" />
+        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,450,0,0" Click="MonsterTypeK" />
+        <!-- endOf monsterTypesA-K -->
+
+        <!-- startOf monsterTypesL-V -->
+        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,150,0,0" Click="MonsterTypeL" />
+        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,180,0,0" Click="MonsterTypeM" />
+        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,210,0,0" Click="MonsterTypeN" />
+        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,240,0,0" Click="MonsterTypeO" />
+        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,270,0,0" Click="MonsterTypeP" />
+        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,300,0,0" Click="MonsterTypeQ" />
+        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,330,0,0" Click="MonsterTypeR" />
+        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,360,0,0" Click="MonsterTypeS" />
+        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,390,0,0" Click="MonsterTypeT" />
+        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,420,0,0" Click="MonsterTypeU" />
+        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="900,450,0,0" Click="MonsterTypeV" />
+        <!-- endOf monsterTypesM-V -->
+
+        <!-- startOf jewelryLabels -->
+        <Label Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,453,0,0"/>
+        <Label Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,483,0,0"/>
+        <Label Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,513,0,0"/>
+        <Label Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,543,0,0"/>
+        <Label Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,573,0,0"/>
+        <Label Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,603,0,0"/>
+        <Label Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,633,0,0"/>
+        <Label Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,663,0,0"/>
+        <!-- endOf jewelryLabels -->
+
+        <!-- startOf jewelryLabelsDynamic -->
+        <Label x:Name="Bracelet" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,453,0,0"/>
+        <Label x:Name="Pin" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,483,0,0"/>
+        <Label x:Name="Brooch" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,513,0,0"/>
+        <Label x:Name="Earring" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,543,0,0"/>
+        <Label x:Name="Pendant" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,573,0,0"/>
+        <Label x:Name="Necklace" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,603,0,0"/>
+        <Label x:Name="Crown" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,633,0,0"/>
+        <Label x:Name="Sceptre" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,663,0,0"/>
+        <!-- endOf jewelryLabelsDynamic -->
+
+
+
+        <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
         <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Checked="SelectionTypeDisplay"/>
         <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Checked="SelectionTypeDisplay"/>
         <RadioButton x:Name="Broochrdbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,160,0,0" Checked="SelectionTypeDisplay"/>

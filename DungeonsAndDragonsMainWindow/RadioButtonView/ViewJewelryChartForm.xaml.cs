@@ -18,6 +18,8 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             ChartEngine = new GetCharts();
         }
         GetCharts ChartEngine;
+        MonsterTypes monsterTypes;
+
         public void SelectionTypeDisplay(object sender, RoutedEventArgs e)
         {
             if (Braceletrdbtn.IsChecked == true)
@@ -64,5 +66,124 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
 
         }
 
+        private void Roll_Click(object sender, RoutedEventArgs e)
+        {
+            var JewelryLogicRepository = new DungeonsAndDragons.ChartEngine.Services.JewelryLogicRepository();
+            bool answer = JewelryLogicRepository.PercentageRoll(monsterTypes);
+            Number_Rolled.Content = answer.ToString();
+            Percentage_Rolled.Content = JewelryLogicRepository.NumberRolled;
+
+
+        }
+
+        private void MonsterTypeA(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.A; 
+        }
+
+        private void MonsterTypeB(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.B;
+        }
+
+        private void MonsterTypeC(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.C;
+        }
+
+        private void MonsterTypeD(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.D;
+        }
+
+        private void MonsterTypeE(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.E;
+        }
+
+        private void MonsterTypeF(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.F;
+        }
+
+        private void MonsterTypeG(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.G;
+        }
+
+        private void MonsterTypeH(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.H;
+        }
+
+        private void MonsterTypeI(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.I;
+        }
+
+        private void MonsterTypeJ(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.J;
+        }
+
+        private void MonsterTypeK(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.K;
+        }
+
+        private void MonsterTypeL(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.L;
+        }
+
+        private void MonsterTypeM(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.M;
+        }
+
+        private void MonsterTypeN(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.N;
+        }
+
+        private void MonsterTypeO(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.O;
+        }
+
+        private void MonsterTypeP(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.P;
+        }
+
+        private void MonsterTypeQ(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.Q;
+        }
+
+        private void MonsterTypeR(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.R;
+        }
+
+        private void MonsterTypeS(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.S;
+        }
+
+        private void MonsterTypeT(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.T;
+        }
+
+        private void MonsterTypeU(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.U;
+        }
+
+        private void MonsterTypeV(object sender, RoutedEventArgs e)
+        {
+            monsterTypes = MonsterTypes.V;
+        }
     }// Bracelet, Pin, Brooch, Earring, Pendant, Necklace, crown, Scepter
 }

@@ -213,7 +213,7 @@ namespace DungeonsAndDragonsMainWindow
             string numberOfGems = "0";
             User_Dice_Roll.Content = answer.ToString();
             Percentage_Roll.Content = logicRepository.NumberRolled;
-            if (answer)// does this always = true?
+            if (answer)
             {
                 numberOfGems = logicRepository.GetNumberOfGems(monsterTypes);
                 NumberOfGems.Content = numberOfGems;
