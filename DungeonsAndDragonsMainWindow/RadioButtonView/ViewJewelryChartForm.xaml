@@ -77,8 +77,17 @@
         <Label x:Name="Sceptre" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,663,0,0"/>
         <!-- endOf jewelryLabelsDynamic -->
 
-
-
+<!-- startOf goldPieceValueForEachJewelryPiece -->
+        <Label x:Name="Bracelet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,450,0,0"/>
+        <Label x:Name="Pin_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,480,0,0"/>
+        <Label x:Name="Brooch_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,510,0,0"/>
+        <Label x:Name="Earring_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,540,0,0"/>
+        <Label x:Name="Pendant_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,570,0,0"/>
+        <Label x:Name="Necklace_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,600,0,0"/>
+        <Label x:Name="Crown_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,630,0,0"/>
+        <Label x:Name="Sceptre_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,660,0,0"/>
+<!--  endOf goldPieceValueForEachJeleryPiece -->
+        
         <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
         <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Checked="SelectionTypeDisplay"/>
         <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Checked="SelectionTypeDisplay"/>
@@ -89,5 +98,8 @@
         <RadioButton x:Name="Crownrdbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,280,0,0" Checked="SelectionTypeDisplay"/>
         <RadioButton x:Name="Sceptrerdbtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,310,0,0" Checked="SelectionTypeDisplay"/>
          <!-- endOf Types of jewelry radio buttons -->
+        
+        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="700,110,0,0"/>
+
     </Grid>
 </Window>

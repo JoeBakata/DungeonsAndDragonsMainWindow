@@ -63,7 +63,6 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             Jewlery_Typelbl.Content = jewelryType;
             Minimum_GP_Valuelbl.Content = list.MinimumGPValue;
             Maximum_GP_Valuelbl.Content = list.MaximumGPValue;
-
         }
 
         private void Roll_Click(object sender, RoutedEventArgs e)
@@ -71,119 +70,168 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             var JewelryLogicRepository = new DungeonsAndDragons.ChartEngine.Services.JewelryLogicRepository();
             bool answer = JewelryLogicRepository.PercentageRoll(monsterTypes);
             Number_Rolled.Content = answer.ToString();
-            Percentage_Rolled.Content = JewelryLogicRepository.NumberRolled;
-
+            Percentage_Rolled.Content = JewelryLogicRepository.DiceNumberRolled;
+            Number_Of_Jewelry.Content = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
+            Bracelet.Content = JewelryLogicRepository.Bracelet.ToString();
+            Pin.Content = JewelryLogicRepository.Pin.ToString();
+            Brooch.Content = JewelryLogicRepository.Brooch.ToString();
+            Earring.Content = JewelryLogicRepository.Earring.ToString();
+            Pendant.Content = JewelryLogicRepository.Pendant.ToString();
+            Necklace.Content = JewelryLogicRepository.Necklace.ToString();
+            Crown.Content = JewelryLogicRepository.Crown.ToString();
+            Sceptre.Content = JewelryLogicRepository.Sceptre.ToString();
+            // This puts the value to 0. How do I get the actual GPValue?
+            // I figured this out on my own. Hopefully it is good, we can go over it to see.
+            Bracelet_GP_Value.Content = JewelryLogicRepository.BraceletGPValue;
+            Pin_GP_Value.Content = JewelryLogicRepository.PinGPValue;
+            Brooch_GP_Value.Content = JewelryLogicRepository.BroochGPValue;
+            Earring_GP_Value.Content = JewelryLogicRepository.EarringGPValue;
+            Pendant_GP_Value.Content = JewelryLogicRepository.PendantGPValue;
+            Necklace_GP_Value.Content = JewelryLogicRepository.NecklaceGPValue;
+            Crown_GP_Value.Content = JewelryLogicRepository.CrownGPValue;
+            Sceptre_GP_Value.Content = JewelryLogicRepository.SceptreGPValue;
+            // I was so happy to figure this out. I added this to push the values to the GP spot on the .xaml and to get it to work I added
+            // GetJewelryGPValue() to JewelryLogicRepository.cs  I can't explain in programming terms what is happening but I figured it out
+            // Without using Google, Just by looking through the code and trying to figure out how to make it display to the screen. I used Logic!
 
         }
+        #region monsterTypesA-L
 
         private void MonsterTypeA(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.A; 
+            monsterTypes = MonsterTypes.A;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeB(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.B;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeC(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.C;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeD(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.D;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeE(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.E;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeF(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.F;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeG(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.G;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeH(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.H;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeI(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.I;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeJ(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.J;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeK(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.K;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeL(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.L;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
+        #endregion monsterTypesA-L
+
+        #region monsterTypesM-V
 
         private void MonsterTypeM(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.M;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeN(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.N;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeO(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.O;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeP(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.P;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeQ(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.Q;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeR(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.R;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeS(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.S;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeT(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.T;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeU(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.U;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
 
         private void MonsterTypeV(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.V;
+            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
         }
+        #endregion monsterTypesM-V
+
     }// Bracelet, Pin, Brooch, Earring, Pendant, Necklace, crown, Scepter
 }

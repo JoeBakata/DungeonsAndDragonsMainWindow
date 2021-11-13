@@ -95,7 +95,7 @@
         <Label x:Name="Ruby" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,723,0,0"/>
 <!-- endOf gemLabelsDynamic -->
 
-        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
+        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
 <!-- add the rest of the monster types and the corisponding methods -->
     </Grid>
 </Window>
