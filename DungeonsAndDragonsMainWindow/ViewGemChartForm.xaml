@@ -20,14 +20,15 @@
         <!-- endOf gemButtons -->
         
         <!-- startOf Labels-->
-        <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,153,0,0"/>
-        <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,183,0,0"/>
-        <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,213,0,0"/>
-        <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,243,0,0"/>
-        <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,273,0,0"/>
-        <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,303,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click"/>
-        <Label Content="Percentage Roll:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,333,0,0"/>
-        <Label Content="NumberOfGems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,363,0,0"/>
+        <Label Content="Gem Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,150,0,0"/>
+        <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,180,0,0"/>
+        <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,210,0,0"/>
+        <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,240,0,0"/>
+        <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,270,0,0"/>
+        <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click"/>
+        <Label Content="There Are Gems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,330,0,0"/>
+        <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,360,0,0"/>
+        <Label Content="Total Number Of Gems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,390,0,0"/>
         <!-- endof Lables -->
 
         <!-- startOf changingValues -->
@@ -36,9 +37,9 @@
         <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,210,0,0"/>
         <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0"/>
         <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0"/>
-        <Label x:Name="User_Dice_Roll" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,300,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="Percentage_Roll" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,330,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="NumberOfGems" Content="UserDiceRoll" HorizontalAlignment="Left" Height="25" Margin="350,360,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="ThereAreGemsBoolean" Content="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="350,330,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Percentage_Rolled" Content="Acutal%" HorizontalAlignment="Left" Height="25" Margin="350,360,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="TotalNumberOfGemsValue" Content="NumberOfGems" HorizontalAlignment="Left" Height="25" Margin="350,390,0,0" VerticalAlignment="Top" Width="100"/>
         <!-- endOf changingValues -->
 
         <!-- startOf monsterTypesA-K -->
@@ -94,6 +95,19 @@
         <Label x:Name="Opal" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,693,0,0"/>
         <Label x:Name="Ruby" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,723,0,0"/>
 <!-- endOf gemLabelsDynamic -->
+
+        <!-- startOf goldPieceValueForEachGemPiece -->
+        <Label x:Name="Quartz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,450,0,0"/>
+        <Label x:Name="Turquoise_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,480,0,0"/>
+        <Label x:Name="Citrine_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,510,0,0"/>
+        <Label x:Name="Onyx_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,540,0,0"/>
+        <Label x:Name="Amber_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,570,0,0"/>
+        <Label x:Name="Garnet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,600,0,0"/>
+        <Label x:Name="Pearl_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,630,0,0"/>
+        <Label x:Name="Topaz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,660,0,0"/>
+        <Label x:Name="Opal_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,690,0,0"/>
+        <Label x:Name="Ruby_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,720,0,0"/>
+        <!--  endOf goldPieceValueForEachGemPiece -->
 
         <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
 <!-- add the rest of the monster types and the corisponding methods -->

@@ -209,14 +209,14 @@ namespace DungeonsAndDragonsMainWindow
         private void Roll_Click(object sender, RoutedEventArgs e)
         {
             var logicRepository = new DungeonsAndDragons.ChartEngine.Services.LogicRepository();
-            bool answer = logicRepository.PercentageRoll(monsterTypes);
+            bool answer = logicRepository.PercentageRolled(monsterTypes);
             string numberOfGems = "0";
-            User_Dice_Roll.Content = answer.ToString();
-            Percentage_Roll.Content = logicRepository.NumberRolled;
+            ThereAreGemsBoolean.Content = answer.ToString();
+            Percentage_Rolled.Content = logicRepository.PercentRollToSeeIfGems;
             if (answer)
             {
                 numberOfGems = logicRepository.GetNumberOfGems(monsterTypes);
-                NumberOfGems.Content = numberOfGems;
+                TotalNumberOfGemsValue.Content = numberOfGems;
                 logicRepository.GetGemNumbers(numberOfGems);
                 Quartz.Content = logicRepository.Quartz.ToString();
                 Turquoise.Content = logicRepository.Turquoise.ToString();
@@ -228,11 +228,21 @@ namespace DungeonsAndDragonsMainWindow
                 Topaz.Content = logicRepository.Topaz.ToString();
                 Opal.Content = logicRepository.Opal.ToString();
                 Ruby.Content = logicRepository.Ruby.ToString();
+                Quartz_GP_Value.Content = logicRepository.QuartzGPValue;
+                Turquoise_GP_Value.Content = logicRepository.TurquoiseGPValue;
+                Citrine_GP_Value.Content = logicRepository.CitrineGPValue;
+                Onyx_GP_Value.Content = logicRepository.OnyxGPValue;
+                Amber_GP_Value.Content = logicRepository.AmberGPValue;
+                Garnet_GP_Value.Content = logicRepository.GarnetGPValue;
+                Pearl_GP_Value.Content = logicRepository.PearlGPValue;
+                Topaz_GP_Value.Content = logicRepository.TopazGPValue;
+                Opal_GP_Value.Content = logicRepository.OpalGPValue;
+                Ruby_GP_Value.Content = logicRepository.RubyGPValue;
             }
             else
             {
                 numberOfGems = "0";
-                NumberOfGems.Content = "0";
+                TotalNumberOfGemsValue.Content = "0";
             }
         }
     }

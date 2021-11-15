@@ -69,9 +69,9 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
         {
             var JewelryLogicRepository = new DungeonsAndDragons.ChartEngine.Services.JewelryLogicRepository();
             bool answer = JewelryLogicRepository.PercentageRoll(monsterTypes);
-            Number_Rolled.Content = answer.ToString();
+            ThereAreJewelsBoolean.Content = answer.ToString();
             Percentage_Rolled.Content = JewelryLogicRepository.DiceNumberRolled;
-            Number_Of_Jewelry.Content = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
+            TotalNumberOfJewelsValue.Content = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
             Bracelet.Content = JewelryLogicRepository.Bracelet.ToString();
             Pin.Content = JewelryLogicRepository.Pin.ToString();
             Brooch.Content = JewelryLogicRepository.Brooch.ToString();

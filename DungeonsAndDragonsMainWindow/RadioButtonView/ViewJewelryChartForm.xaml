@@ -12,18 +12,18 @@
         <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="270,140,0,0"/>
         <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,180,0,0"/>
         <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,220,0,0" Click="Roll_Click"/>
-        <Label Content="Number_Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,260,0,0"/>
-        <Label Content="Percentage_Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,300,0,0"/>
-        <Label Content="Number_Of_Jewelry:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,340,0,0"/>
+        <Label Content="ThereAreJewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,260,0,0"/>
+        <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,300,0,0"/>
+        <Label Content="Total Number Of Jewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,340,0,0"/>
         <!-- endOf Labels -->  
         
          <!-- startOf Changing values -->
         <Label x:Name="Jewlery_Typelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
         <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
         <Label x:Name="Maximum_GP_Valuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
-        <Label x:Name="Number_Rolled" Content="NumberRolled" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="Percentage_Rolled" Content="PercentageRolled" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
-        <Label x:Name="Number_Of_Jewelry" Content="NumberOfJewelry" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="ThereAreJewelsBoolean" Content="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="Percentage_Rolled" Content="Actual%" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label x:Name="TotalNumberOfJewelsValue" Content="NumberOfJewels" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
 
         <!-- endOf Changing values -->
 
