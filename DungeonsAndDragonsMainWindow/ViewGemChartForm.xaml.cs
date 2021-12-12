@@ -10,6 +10,8 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewGemChartForm : Window
     {
+        const string zero = "0";
+
         GetCharts ChartEngine;
         MonsterTypes monsterTypes;
 
@@ -226,30 +228,30 @@ namespace DungeonsAndDragonsMainWindow
             }
             else
             {
-                numberOfGems = "0";
-                Quartz_GP_Value.Content = "0";
-                Turquoise_GP_Value.Content = "0";
-                Citrine_GP_Value.Content = "0";
-                Onyx_GP_Value.Content = "0"; 
-                Amber_GP_Value.Content = "0";
-                Garnet_GP_Value.Content = "0";
-                Pearl_GP_Value.Content = "0";
-                Topaz_GP_Value.Content = "0";
-                Opal_GP_Value.Content = "0";
-                Ruby_GP_Value.Content = "0";
+                numberOfGems = zero;
+                Quartz_GP_Value.Content = zero;
+                Turquoise_GP_Value.Content = zero;
+                Citrine_GP_Value.Content = zero;
+                Onyx_GP_Value.Content = zero; 
+                Amber_GP_Value.Content = zero;
+                Garnet_GP_Value.Content = zero;
+                Pearl_GP_Value.Content = zero;
+                Topaz_GP_Value.Content = zero;
+                Opal_GP_Value.Content = zero;
+                Ruby_GP_Value.Content = zero;
 
-                Quartz.Content = "0";
-                Turquoise.Content = "0";
-                Citrine.Content = "0";
-                Onyx.Content = "0";
-                Amber.Content = "0";
-                Garnet.Content = "0";
-                Pearl.Content = "0";
-                Topaz.Content = "0";
-                Opal.Content = "0";
-                Ruby.Content = "0";
+                Quartz.Content = zero;
+                Turquoise.Content = zero;
+                Citrine.Content = zero;
+                Onyx.Content = zero;
+                Amber.Content = zero;
+                Garnet.Content = zero;
+                Pearl.Content = zero;
+                Topaz.Content = zero;
+                Opal.Content = zero;
+                Ruby.Content = zero;
 
-                TotalNumberOfGemsValue.Content = "0";
+                TotalNumberOfGemsValue.Content = zero;
             }
         }
 
