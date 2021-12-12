@@ -72,27 +72,54 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             ThereAreJewelsBoolean.Content = answer.ToString();
             Percentage_Rolled.Content = JewelryLogicRepository.DiceNumberRolled;
             TotalNumberOfJewelsValue.Content = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
-            Bracelet.Content = JewelryLogicRepository.Bracelet.ToString();
-            Pin.Content = JewelryLogicRepository.Pin.ToString();
-            Brooch.Content = JewelryLogicRepository.Brooch.ToString();
-            Earring.Content = JewelryLogicRepository.Earring.ToString();
-            Pendant.Content = JewelryLogicRepository.Pendant.ToString();
-            Necklace.Content = JewelryLogicRepository.Necklace.ToString();
-            Crown.Content = JewelryLogicRepository.Crown.ToString();
-            Sceptre.Content = JewelryLogicRepository.Sceptre.ToString();
-            // This puts the value to 0. How do I get the actual GPValue?
-            // I figured this out on my own. Hopefully it is good, we can go over it to see.
-            Bracelet_GP_Value.Content = JewelryLogicRepository.BraceletGPValue;
-            Pin_GP_Value.Content = JewelryLogicRepository.PinGPValue;
-            Brooch_GP_Value.Content = JewelryLogicRepository.BroochGPValue;
-            Earring_GP_Value.Content = JewelryLogicRepository.EarringGPValue;
-            Pendant_GP_Value.Content = JewelryLogicRepository.PendantGPValue;
-            Necklace_GP_Value.Content = JewelryLogicRepository.NecklaceGPValue;
-            Crown_GP_Value.Content = JewelryLogicRepository.CrownGPValue;
-            Sceptre_GP_Value.Content = JewelryLogicRepository.SceptreGPValue;
-            // I was so happy to figure this out. I added this to push the values to the GP spot on the .xaml and to get it to work I added
-            // GetJewelryGPValue() to JewelryLogicRepository.cs  I can't explain in programming terms what is happening but I figured it out
-            // Without using Google, Just by looking through the code and trying to figure out how to make it display to the screen. I used Logic!
+            
+            if (answer)
+            {
+                Bracelet.Content = JewelryLogicRepository.Bracelet.ToString();
+                Pin.Content = JewelryLogicRepository.Pin.ToString();
+                Brooch.Content = JewelryLogicRepository.Brooch.ToString();
+                Earring.Content = JewelryLogicRepository.Earring.ToString();
+                Pendant.Content = JewelryLogicRepository.Pendant.ToString();
+                Necklace.Content = JewelryLogicRepository.Necklace.ToString();
+                Crown.Content = JewelryLogicRepository.Crown.ToString();
+                Sceptre.Content = JewelryLogicRepository.Sceptre.ToString();
+                // This puts the value to 0. How do I get the actual GPValue?
+                // I figured this out on my own. Hopefully it is good, we can go over it to see.
+                Bracelet_GP_Value.Content = JewelryLogicRepository.BraceletGPValue;
+                Pin_GP_Value.Content = JewelryLogicRepository.PinGPValue;
+                Brooch_GP_Value.Content = JewelryLogicRepository.BroochGPValue;
+                Earring_GP_Value.Content = JewelryLogicRepository.EarringGPValue;
+                Pendant_GP_Value.Content = JewelryLogicRepository.PendantGPValue;
+                Necklace_GP_Value.Content = JewelryLogicRepository.NecklaceGPValue;
+                Crown_GP_Value.Content = JewelryLogicRepository.CrownGPValue;
+                Sceptre_GP_Value.Content = JewelryLogicRepository.SceptreGPValue;
+                // I was so happy to figure this out. I added this to push the values to the GP spot on the .xaml and to get it to work I added
+                // GetJewelryGPValue() to JewelryLogicRepository.cs  I can't explain in programming terms what is happening but I figured it out
+                // Without using Google, Just by looking through the code and trying to figure out how to make it display to the screen. I used Logic!
+            }
+            else
+            {
+                TotalNumberOfJewelsValue.Content = "0";
+                Bracelet_GP_Value.Content = "0";
+                Pin_GP_Value.Content = "0";
+                Brooch_GP_Value.Content = "0";
+                Earring_GP_Value.Content = "0";
+                Pendant_GP_Value.Content = "0";
+                Necklace_GP_Value.Content = "0";
+                Crown_GP_Value.Content = "0";
+                Sceptre_GP_Value.Content = "0";
+
+                Bracelet.Content = "0";
+                Pin.Content = "0";
+                Brooch.Content = "0";
+                Earring.Content = "0";
+                Pendant.Content = "0";
+                Necklace.Content = "0";
+                Crown.Content = "0";
+                Sceptre.Content = "0";
+
+            }
+
 
         }
         #region monsterTypesA-L
