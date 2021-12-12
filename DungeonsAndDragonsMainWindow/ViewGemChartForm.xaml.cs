@@ -11,7 +11,7 @@ namespace DungeonsAndDragonsMainWindow
     public partial class ViewGemChartForm : Window
     {
         GetCharts ChartEngine;
-        MonsterTypes monsterTypes = MonsterTypes.B;// Don't think this is needed anymore
+        MonsterTypes monsterTypes;
 
         public ViewGemChartForm()
         {
@@ -68,70 +68,77 @@ namespace DungeonsAndDragonsMainWindow
         {
             monsterTypes = MonsterTypes.A;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeB(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.B;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
 
         }
         public void MonsterTypeC(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.C;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
 
         }
         public void MonsterTypeD(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.D;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
+
         }
         public void MonsterTypeE(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.E;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
+
         }
         public void MonsterTypeF(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.F;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeG(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.G;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeH(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.H;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeI(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.I;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeJ(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.J;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeK(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.K;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeL(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.L;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         #endregion monsterTypesA-L
 
@@ -140,58 +147,61 @@ namespace DungeonsAndDragonsMainWindow
         {
             monsterTypes = MonsterTypes.M;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeN(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.N;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeO(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.O;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeP(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.P;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeQ(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.Q;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeR(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.R;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeS(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.S;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeT(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.T;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeU(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.U;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
         }
         public void MonsterTypeV(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.V;
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Roll.IsEnabled = true;
         }
         #endregion monsterTypesM-V
 
@@ -224,7 +234,7 @@ namespace DungeonsAndDragonsMainWindow
                 Onyx.Content = logicRepository.Onyx.ToString();
                 Amber.Content = logicRepository.Amber.ToString();
                 Garnet.Content = logicRepository.Garnet.ToString();
-                Pearl.Content = logicRepository.Pearl.ToString();// This was logicRepository.Garnet. Fixed to dot Pearl. I think this will fix the for loop
+                Pearl.Content = logicRepository.Pearl.ToString();
                 Topaz.Content = logicRepository.Topaz.ToString();
                 Opal.Content = logicRepository.Opal.ToString();
                 Ruby.Content = logicRepository.Ruby.ToString();

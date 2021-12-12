@@ -25,7 +25,7 @@
         <Label Content="Minimum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,210,0,0"/>
         <Label Content="Maximum Roll Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,240,0,0"/>
         <Label Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,270,0,0"/>
-        <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click"/>
+        <Button x:Name="Roll" Content="Roll:" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.04,0.55" Click="Roll_Click" IsEnabled="False"/>
         <Label Content="There Are Gems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,330,0,0"/>
         <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,360,0,0"/>
         <Label Content="Total Number Of Gems:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="200,390,0,0"/>
