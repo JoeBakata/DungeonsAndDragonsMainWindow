@@ -225,6 +225,17 @@ namespace DungeonsAndDragonsMainWindow
                 Topaz_GP_Value.Content = logicRepository.TopazGPValue;
                 Opal_GP_Value.Content = logicRepository.OpalGPValue;
                 Ruby_GP_Value.Content = logicRepository.RubyGPValue;
+
+                Quartz_Individual_GP_Value.Content = logicRepository.IndividualQuartzGPValue;
+                Turquoise_Individual_GP_Value.Content = logicRepository.IndividualTurquoiseGPValue;
+                Citrine_Individual_GP_Value.Content = logicRepository.IndividualCitrineGPValue;
+                Onyx_Individual_GP_Value.Content = logicRepository.IndividualOnyxGPValue;
+                Amber_Individual_GP_Value.Content = logicRepository.IndividualAmberGPValue;
+                Garnet_Individual_GP_Value.Content = logicRepository.IndividualGarnetGPValue;
+                Pearl_Individual_GP_Value.Content = logicRepository.IndividualPearlGPValue;
+                Topaz_Individual_GP_Value.Content = logicRepository.IndividualTopazGPValue;
+                Opal_Individual_GP_Value.Content = logicRepository.IndividualOpalGPValue;
+                Ruby_Individual_GP_Value.Content = logicRepository.IndividualRubyGPValue;
             }
             else
             {
@@ -250,6 +261,17 @@ namespace DungeonsAndDragonsMainWindow
                 Topaz.Content = zero;
                 Opal.Content = zero;
                 Ruby.Content = zero;
+
+                Quartz_Individual_GP_Value.Content = zero;
+                Turquoise_Individual_GP_Value.Content = zero;
+                Citrine_Individual_GP_Value.Content = zero;
+                Onyx_Individual_GP_Value.Content = zero;
+                Amber_Individual_GP_Value.Content = zero;
+                Garnet_Individual_GP_Value.Content = zero;
+                Pearl_Individual_GP_Value.Content = zero;
+                Topaz_Individual_GP_Value.Content = zero;
+                Opal_Individual_GP_Value.Content = zero;
+                Ruby_Individual_GP_Value.Content = zero;
 
                 TotalNumberOfGemsValue.Content = zero;
             }

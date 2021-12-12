@@ -71,42 +71,59 @@
         <!-- endOf monsterTypesM-V -->
         
         <!-- startOf gemLabels -->
-        <Label Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,453,0,0"/>
-        <Label Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,483,0,0"/>
-        <Label Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,513,0,0"/>
-        <Label Content="Onyx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,543,0,0"/>
-        <Label Content="Amber" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,573,0,0"/>
-        <Label Content="Garnet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,603,0,0"/>
-        <Label Content="Pearl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,633,0,0"/>
-        <Label Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,663,0,0"/>
-        <Label Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,693,0,0"/>
-        <Label Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,723,0,0"/>
-<!-- endOf gemLabels -->
+        <Label Content="GemType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,470,0,0"/>
+        <Label Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,500,0,0"/>
+        <Label Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,530,0,0"/>
+        <Label Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,560,0,0"/>
+        <Label Content="Onyx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,590,0,0"/>
+        <Label Content="Amber" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,620,0,0"/>
+        <Label Content="Garnet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,650,0,0"/>
+        <Label Content="Pearl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,680,0,0"/>
+        <Label Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,710,0,0"/>
+        <Label Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,740,0,0"/>
+        <Label Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="50,770,0,0"/>
+        <!-- endOf gemLabels -->
 
-        <!-- startOf gemLabelsDynamic -->
-        <Label x:Name="Quartz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,453,0,0"/>
-        <Label x:Name="Turquoise" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,483,0,0"/>
-        <Label x:Name="Citrine" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,513,0,0"/>
-        <Label x:Name="Onyx" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,543,0,0"/>
-        <Label x:Name="Amber" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,573,0,0"/>
-        <Label x:Name="Garnet" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,603,0,0"/>
-        <Label x:Name="Pearl" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,633,0,0"/>
-        <Label x:Name="Topaz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,663,0,0"/>
-        <Label x:Name="Opal" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,693,0,0"/>
-        <Label x:Name="Ruby" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,723,0,0"/>
-<!-- endOf gemLabelsDynamic -->
+        <!-- startOf numberOfGemsLabelDynamic -->
+        <Label x:Name="Total_Gems" Content="TotalGems" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="150,470,0,0"/>
+        <Label x:Name="Quartz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,500,0,0"/>
+        <Label x:Name="Turquoise" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,530,0,0"/>
+        <Label x:Name="Citrine" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,560,0,0"/>
+        <Label x:Name="Onyx" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,590,0,0"/>
+        <Label x:Name="Amber" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,620,0,0"/>
+        <Label x:Name="Garnet" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,650,0,0"/>
+        <Label x:Name="Pearl" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,680,0,0"/>
+        <Label x:Name="Topaz" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,710,0,0"/>
+        <Label x:Name="Opal" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,740,0,0"/>
+        <Label x:Name="Ruby" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,770,0,0"/>
+        <!-- endOf numberOfGemsLabelDynamic -->
 
+        <!-- startOf individualGPValueLabel  -->
+        <Label x:Name="Each_GP_Value" Content="EachGemGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,470,0,0"/>
+        <Label x:Name="Quartz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,500,0,0"/>
+        <Label x:Name="Turquoise_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,530,0,0"/>
+        <Label x:Name="Citrine_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,560,0,0"/>
+        <Label x:Name="Onyx_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,590,0,0"/>
+        <Label x:Name="Amber_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,620,0,0"/>
+        <Label x:Name="Garnet_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,650,0,0"/>
+        <Label x:Name="Pearl_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,680,0,0"/>
+        <Label x:Name="Topaz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,710,0,0"/>
+        <Label x:Name="Opal_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,740,0,0"/>
+        <Label x:Name="Ruby_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,770,0,0"/>
+        <!-- endOf individualGPValueLabel -->
+        
         <!-- startOf goldPieceValueForEachGemPiece -->
-        <Label x:Name="Quartz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,450,0,0"/>
-        <Label x:Name="Turquoise_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,480,0,0"/>
-        <Label x:Name="Citrine_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,510,0,0"/>
-        <Label x:Name="Onyx_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,540,0,0"/>
-        <Label x:Name="Amber_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,570,0,0"/>
-        <Label x:Name="Garnet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,600,0,0"/>
-        <Label x:Name="Pearl_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,630,0,0"/>
-        <Label x:Name="Topaz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,660,0,0"/>
-        <Label x:Name="Opal_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,690,0,0"/>
-        <Label x:Name="Ruby_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,720,0,0"/>
+        <Label x:Name="Total_GP_Value" Content="TotalGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,470,0,0"/>
+        <Label x:Name="Quartz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,500,0,0"/>
+        <Label x:Name="Turquoise_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,530,0,0"/>
+        <Label x:Name="Citrine_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,560,0,0"/>
+        <Label x:Name="Onyx_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,590,0,0"/>
+        <Label x:Name="Amber_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,620,0,0"/>
+        <Label x:Name="Garnet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,650,0,0"/>
+        <Label x:Name="Pearl_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,680,0,0"/>
+        <Label x:Name="Topaz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,710,0,0"/>
+        <Label x:Name="Opal_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,740,0,0"/>
+        <Label x:Name="Ruby_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,770,0,0"/>
         <!--  endOf goldPieceValueForEachGemPiece -->
 
         <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
