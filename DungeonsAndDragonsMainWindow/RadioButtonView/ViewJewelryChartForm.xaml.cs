@@ -19,6 +19,7 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
         }
         GetCharts ChartEngine;
         MonsterTypes monsterTypes;
+        const string Zero = "0";
 
         public void SelectionTypeDisplay(object sender, RoutedEventArgs e)
         {
@@ -60,64 +61,77 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
         {
             List<JewelryValue> jewelryTreasures = ChartEngine.JewelryGPValueChart;
             JewelryValue list = jewelryTreasures.First(x => x.JewelryType == jewelryType);
-            Jewlery_Typelbl.Content = jewelryType;
-            Minimum_GP_Valuelbl.Content = list.MinimumGPValue;
-            Maximum_GP_Valuelbl.Content = list.MaximumGPValue;
+            Jewlery_Typelbl.Text = jewelryType.ToString();
+            Minimum_GP_Valuelbl.Text = list.MinimumGPValue.ToString();
+            Maximum_GP_Valuelbl.Text = list.MaximumGPValue.ToString();
         }
 
         private void Roll_Click(object sender, RoutedEventArgs e)
         {
             var JewelryLogicRepository = new DungeonsAndDragons.ChartEngine.Services.JewelryLogicRepository();
             bool answer = JewelryLogicRepository.PercentageRoll(monsterTypes);
-            ThereAreJewelsBoolean.Content = answer.ToString();
-            Percentage_Rolled.Content = JewelryLogicRepository.DiceNumberRolled;
-            TotalNumberOfJewelsValue.Content = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
+            ThereAreJewelsBoolean.Text = answer.ToString();
+            Percentage_Rolled.Text = JewelryLogicRepository.DiceNumberRolled;
+            TotalNumberOfJewelsValue.Text = JewelryLogicRepository.NumberOfJewelryPieces.ToString();
             
             if (answer)
             {
-                Bracelet.Content = JewelryLogicRepository.Bracelet.ToString();
-                Pin.Content = JewelryLogicRepository.Pin.ToString();
-                Brooch.Content = JewelryLogicRepository.Brooch.ToString();
-                Earring.Content = JewelryLogicRepository.Earring.ToString();
-                Pendant.Content = JewelryLogicRepository.Pendant.ToString();
-                Necklace.Content = JewelryLogicRepository.Necklace.ToString();
-                Crown.Content = JewelryLogicRepository.Crown.ToString();
-                Sceptre.Content = JewelryLogicRepository.Sceptre.ToString();
-                // This puts the value to 0. How do I get the actual GPValue?
-                // I figured this out on my own. Hopefully it is good, we can go over it to see.
-                Bracelet_GP_Value.Content = JewelryLogicRepository.BraceletGPValue;
-                Pin_GP_Value.Content = JewelryLogicRepository.PinGPValue;
-                Brooch_GP_Value.Content = JewelryLogicRepository.BroochGPValue;
-                Earring_GP_Value.Content = JewelryLogicRepository.EarringGPValue;
-                Pendant_GP_Value.Content = JewelryLogicRepository.PendantGPValue;
-                Necklace_GP_Value.Content = JewelryLogicRepository.NecklaceGPValue;
-                Crown_GP_Value.Content = JewelryLogicRepository.CrownGPValue;
-                Sceptre_GP_Value.Content = JewelryLogicRepository.SceptreGPValue;
-                // I was so happy to figure this out. I added this to push the values to the GP spot on the .xaml and to get it to work I added
-                // GetJewelryGPValue() to JewelryLogicRepository.cs  I can't explain in programming terms what is happening but I figured it out
-                // Without using Google, Just by looking through the code and trying to figure out how to make it display to the screen. I used Logic!
+                Bracelet.Text = JewelryLogicRepository.Bracelet.ToString();
+                Pin.Text = JewelryLogicRepository.Pin.ToString();
+                Brooch.Text = JewelryLogicRepository.Brooch.ToString();
+                Earring.Text = JewelryLogicRepository.Earring.ToString();
+                Pendant.Text = JewelryLogicRepository.Pendant.ToString();
+                Necklace.Text = JewelryLogicRepository.Necklace.ToString();
+                Crown.Text = JewelryLogicRepository.Crown.ToString();
+                Sceptre.Text = JewelryLogicRepository.Sceptre.ToString();
+
+                Bracelet_GP_Value.Text = JewelryLogicRepository.BraceletGPValue.ToString();
+                Pin_GP_Value.Text = JewelryLogicRepository.PinGPValue.ToString();
+                Brooch_GP_Value.Text = JewelryLogicRepository.BroochGPValue.ToString();
+                Earring_GP_Value.Text = JewelryLogicRepository.EarringGPValue.ToString();
+                Pendant_GP_Value.Text = JewelryLogicRepository.PendantGPValue.ToString();
+                Necklace_GP_Value.Text = JewelryLogicRepository.NecklaceGPValue.ToString();
+                Crown_GP_Value.Text = JewelryLogicRepository.CrownGPValue.ToString();
+                Sceptre_GP_Value.Text = JewelryLogicRepository.SceptreGPValue.ToString();
+
+                Individual_Bracelet_GP_Value.Text = JewelryLogicRepository.IndividualBraceletGPValue;
+                Individual_Pin_GP_Value.Text = JewelryLogicRepository.IndividualPinGPValue;
+                Individual_Brooch_GP_Value.Text = JewelryLogicRepository.IndividualBroochGPValue;
+                Individual_Earring_GP_Value.Text = JewelryLogicRepository.IndividualEarringGPValue;
+                Individual_Pendant_GP_Value.Text = JewelryLogicRepository.IndividualPendantGPValue;
+                Individual_Necklace_GP_Value.Text = JewelryLogicRepository.IndividualNecklaceGPValue;
+                Individual_Crown_GP_Value.Text = JewelryLogicRepository.IndividualCrownGPValue;
+                Individual_Sceptre_GP_Value.Text = JewelryLogicRepository.IndividualSceptreGPValue;
             }
             else
             {
-                TotalNumberOfJewelsValue.Content = "0";
-                Bracelet_GP_Value.Content = "0";
-                Pin_GP_Value.Content = "0";
-                Brooch_GP_Value.Content = "0";
-                Earring_GP_Value.Content = "0";
-                Pendant_GP_Value.Content = "0";
-                Necklace_GP_Value.Content = "0";
-                Crown_GP_Value.Content = "0";
-                Sceptre_GP_Value.Content = "0";
+                TotalNumberOfJewelsValue.Text = "0";
+                Bracelet_GP_Value.Text = "0";
+                Pin_GP_Value.Text = "0";
+                Brooch_GP_Value.Text = "0";
+                Earring_GP_Value.Text = "0";
+                Pendant_GP_Value.Text = "0";
+                Necklace_GP_Value.Text = "0";
+                Crown_GP_Value.Text = "0";
+                Sceptre_GP_Value.Text = "0";
 
-                Bracelet.Content = "0";
-                Pin.Content = "0";
-                Brooch.Content = "0";
-                Earring.Content = "0";
-                Pendant.Content = "0";
-                Necklace.Content = "0";
-                Crown.Content = "0";
-                Sceptre.Content = "0";
+                Bracelet.Text = "0";
+                Pin.Text = "0";
+                Brooch.Text = "0";
+                Earring.Text = "0";
+                Pendant.Text = "0";
+                Necklace.Text = "0";
+                Crown.Text = "0";
+                Sceptre.Text = Zero;
 
+                Individual_Bracelet_GP_Value.Text = Zero;
+                Individual_Pin_GP_Value.Text = Zero;
+                Individual_Brooch_GP_Value.Text = Zero;
+                Individual_Earring_GP_Value.Text = Zero;
+                Individual_Pendant_GP_Value.Text = Zero;
+                Individual_Necklace_GP_Value.Text = Zero;
+                Individual_Crown_GP_Value.Text = Zero;
+                Individual_Sceptre_GP_Value.Text = Zero;
             }
 
 
@@ -126,74 +140,62 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
 
         private void MonsterTypeA(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.A;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.A);
         }
 
         private void MonsterTypeB(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.B;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.B);
         }
 
         private void MonsterTypeC(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.C;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.C);
         }
 
         private void MonsterTypeD(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.D;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.D);
         }
 
         private void MonsterTypeE(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.E;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.E);
         }
 
         private void MonsterTypeF(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.F;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.F);
         }
 
         private void MonsterTypeG(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.G;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.G);
         }
 
         private void MonsterTypeH(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.H;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.H);
         }
 
         private void MonsterTypeI(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.I;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.I);
         }
 
         private void MonsterTypeJ(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.J;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.J);
         }
 
         private void MonsterTypeK(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.K;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.K);
         }
 
         private void MonsterTypeL(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.L;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.L);
         }
         #endregion monsterTypesA-L
 
@@ -201,64 +203,60 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
 
         private void MonsterTypeM(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.M;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.M);
         }
 
         private void MonsterTypeN(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.N;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.N);
         }
 
         private void MonsterTypeO(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.O;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.O);
         }
 
         private void MonsterTypeP(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.P;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.P);
         }
 
         private void MonsterTypeQ(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.Q;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.Q);
         }
 
         private void MonsterTypeR(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.R;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.R);
         }
 
         private void MonsterTypeS(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.S;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.S);
         }
 
         private void MonsterTypeT(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.T;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.T);
         }
 
         private void MonsterTypeU(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.U;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.U);
         }
 
         private void MonsterTypeV(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.V;
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            RollButtonEnabledByMonsterSelection(MonsterTypes.V);
         }
         #endregion monsterTypesM-V
 
+        private void RollButtonEnabledByMonsterSelection(MonsterTypes _monsterTypes)
+        {
+            monsterTypes = _monsterTypes;
+            Monster_Type_Selected.Content = $"You selected monster type: {_monsterTypes}";
+            Roll.IsEnabled = true;
+        }
     }// Bracelet, Pin, Brooch, Earring, Pendant, Necklace, crown, Scepter
 }

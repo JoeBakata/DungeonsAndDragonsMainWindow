@@ -10,7 +10,7 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewGemChartForm : Window
     {
-        const string zero = "0";
+        const string Zero = "0";
 
         GetCharts ChartEngine;
         MonsterTypes monsterTypes;
@@ -239,41 +239,41 @@ namespace DungeonsAndDragonsMainWindow
             }
             else
             {
-                numberOfGems = zero;
-                Quartz_GP_Value.Content = zero;
-                Turquoise_GP_Value.Content = zero;
-                Citrine_GP_Value.Content = zero;
-                Onyx_GP_Value.Content = zero; 
-                Amber_GP_Value.Content = zero;
-                Garnet_GP_Value.Content = zero;
-                Pearl_GP_Value.Content = zero;
-                Topaz_GP_Value.Content = zero;
-                Opal_GP_Value.Content = zero;
-                Ruby_GP_Value.Content = zero;
+                numberOfGems = Zero;
+                Quartz_GP_Value.Content = Zero;
+                Turquoise_GP_Value.Content = Zero;
+                Citrine_GP_Value.Content = Zero;
+                Onyx_GP_Value.Content = Zero; 
+                Amber_GP_Value.Content = Zero;
+                Garnet_GP_Value.Content = Zero;
+                Pearl_GP_Value.Content = Zero;
+                Topaz_GP_Value.Content = Zero;
+                Opal_GP_Value.Content = Zero;
+                Ruby_GP_Value.Content = Zero;
 
-                Quartz.Content = zero;
-                Turquoise.Content = zero;
-                Citrine.Content = zero;
-                Onyx.Content = zero;
-                Amber.Content = zero;
-                Garnet.Content = zero;
-                Pearl.Content = zero;
-                Topaz.Content = zero;
-                Opal.Content = zero;
-                Ruby.Content = zero;
+                Quartz.Content = Zero;
+                Turquoise.Content = Zero;
+                Citrine.Content = Zero;
+                Onyx.Content = Zero;
+                Amber.Content = Zero;
+                Garnet.Content = Zero;
+                Pearl.Content = Zero;
+                Topaz.Content = Zero;
+                Opal.Content = Zero;
+                Ruby.Content = Zero;
 
-                Quartz_Individual_GP_Value.Content = zero;
-                Turquoise_Individual_GP_Value.Content = zero;
-                Citrine_Individual_GP_Value.Content = zero;
-                Onyx_Individual_GP_Value.Content = zero;
-                Amber_Individual_GP_Value.Content = zero;
-                Garnet_Individual_GP_Value.Content = zero;
-                Pearl_Individual_GP_Value.Content = zero;
-                Topaz_Individual_GP_Value.Content = zero;
-                Opal_Individual_GP_Value.Content = zero;
-                Ruby_Individual_GP_Value.Content = zero;
+                Quartz_Individual_GP_Value.Content = Zero;
+                Turquoise_Individual_GP_Value.Content = Zero;
+                Citrine_Individual_GP_Value.Content = Zero;
+                Onyx_Individual_GP_Value.Content = Zero;
+                Amber_Individual_GP_Value.Content = Zero;
+                Garnet_Individual_GP_Value.Content = Zero;
+                Pearl_Individual_GP_Value.Content = Zero;
+                Topaz_Individual_GP_Value.Content = Zero;
+                Opal_Individual_GP_Value.Content = Zero;
+                Ruby_Individual_GP_Value.Content = Zero;
 
-                TotalNumberOfGemsValue.Content = zero;
+                TotalNumberOfGemsValue.Content = Zero;
             }
         }
 

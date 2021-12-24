@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="ViewJewelryChartForm" Height="1000" Width="1200">
     <Grid> 
-         <!-- startOf Labels --> <!-- todo 2. Lots of work for this one yet. See below about the monsters. Why no dice roll for value or percentage chance?-->
+        <!-- startOf Labels --> <!-- todo 2. Lots of work for this one yet. See below about the monsters. Why no dice roll for value or percentage chance?-->
         <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,100,0,0"/>
         <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="270,140,0,0"/>
         <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,180,0,0"/>
-        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,220,0,0" Click="Roll_Click"/>
+        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,220,0,0" Click="Roll_Click" IsEnabled="False"/>
         <Label Content="ThereAreJewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,260,0,0"/>
         <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,300,0,0"/>
         <Label Content="Total Number Of Jewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,340,0,0"/>
         <!-- endOf Labels -->  
         
-         <!-- startOf Changing values -->
-        <Label x:Name="Jewlery_Typelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
-        <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
-        <Label x:Name="Maximum_GP_Valuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
-        <Label x:Name="ThereAreJewelsBoolean" Content="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="Percentage_Rolled" Content="Actual%" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
-        <Label x:Name="TotalNumberOfJewelsValue" Content="NumberOfJewels" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
+        <!-- startOf Changing values -->
+        <TextBlock x:Name="Jewlery_Typelbl" Text="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
+        <TextBlock x:Name="Minimum_GP_Valuelbl" Text="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
+        <TextBlock x:Name="Maximum_GP_Valuelbl" Text="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
+        <TextBlock x:Name="ThereAreJewelsBoolean" Text="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBlock x:Name="Percentage_Rolled" Text="Actual%" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
+        <TextBlock x:Name="TotalNumberOfJewelsValue" Text="NumberOfJewels" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
 
         <!-- endOf Changing values -->
 
@@ -56,38 +56,54 @@
         <!-- endOf monsterTypesM-V -->
 
         <!-- startOf jewelryLabels -->
-        <Label Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,453,0,0"/>
-        <Label Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,483,0,0"/>
-        <Label Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,513,0,0"/>
-        <Label Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,543,0,0"/>
-        <Label Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,573,0,0"/>
-        <Label Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,603,0,0"/>
-        <Label Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,633,0,0"/>
-        <Label Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,663,0,0"/>
+        <TextBlock Text="Jewelry Types" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="50,420,0,0" FontWeight="Bold"/>
+        <TextBlock Text="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,450,0,0"/>
+        <TextBlock Text="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,500,0,0"/>
+        <TextBlock Text="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,550,0,0"/>
+        <TextBlock Text="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,600,0,0"/>
+        <TextBlock Text="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,650,0,0"/>
+        <TextBlock Text="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,700,0,0"/>
+        <TextBlock Text="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,750,0,0"/>
+        <TextBlock Text="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,800,0,0"/>
         <!-- endOf jewelryLabels -->
 
         <!-- startOf jewelryLabelsDynamic -->
-        <Label x:Name="Bracelet" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,453,0,0"/>
-        <Label x:Name="Pin" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,483,0,0"/>
-        <Label x:Name="Brooch" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,513,0,0"/>
-        <Label x:Name="Earring" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,543,0,0"/>
-        <Label x:Name="Pendant" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,573,0,0"/>
-        <Label x:Name="Necklace" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,603,0,0"/>
-        <Label x:Name="Crown" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,633,0,0"/>
-        <Label x:Name="Sceptre" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,663,0,0"/>
+        <TextBlock Text="# Of Pieces" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="150,420,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Bracelet" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,450,0,0"/>
+        <TextBlock x:Name="Pin" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,500,0,0"/>
+        <TextBlock x:Name="Brooch" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,550,0,0"/>
+        <TextBlock x:Name="Earring" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,600,0,0"/>
+        <TextBlock x:Name="Pendant" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,650,0,0"/>
+        <TextBlock x:Name="Necklace" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,700,0,0"/>
+        <TextBlock x:Name="Crown" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="150,750,0,0"/>
+        <TextBlock x:Name="Sceptre" Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Height="50" Margin="150,800,0,0"/>
         <!-- endOf jewelryLabelsDynamic -->
 
-<!-- startOf goldPieceValueForEachJewelryPiece -->
-        <Label x:Name="Bracelet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,450,0,0"/>
-        <Label x:Name="Pin_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,480,0,0"/>
-        <Label x:Name="Brooch_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,510,0,0"/>
-        <Label x:Name="Earring_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,540,0,0"/>
-        <Label x:Name="Pendant_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,570,0,0"/>
-        <Label x:Name="Necklace_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,600,0,0"/>
-        <Label x:Name="Crown_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,630,0,0"/>
-        <Label x:Name="Sceptre_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,660,0,0"/>
-<!--  endOf goldPieceValueForEachJeleryPiece -->
+        <!-- startOf goldPieceValueForEachJewelryPiece -->
+        <TextBlock Text="Individual GP Values" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="230,420,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Individual_Bracelet_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,450,0,0"/>
+        <TextBlock x:Name="Individual_Pin_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,500,0,0"/>
+        <TextBlock x:Name="Individual_Brooch_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,550,0,0"/>
+        <TextBlock x:Name="Individual_Earring_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,600,0,0"/>
+        <TextBlock x:Name="Individual_Pendant_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,650,0,0"/>
+        <TextBlock x:Name="Individual_Necklace_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,700,0,0"/>
+        <TextBlock x:Name="Individual_Crown_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,750,0,0"/>
+        <TextBlock x:Name="Individual_Sceptre_GP_Value" Text="GP" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Height="50" Margin="230,800,0,0"/>
         
+        <!--  endOf goldPieceValueForEachJeleryPiece -->
+        
+        <!-- startOf totalGoldPieceValueForJewelry -->
+        <TextBlock Text="Total GP Value" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="500,420,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="Bracelet_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,450,0,0"/>
+        <TextBlock x:Name="Pin_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,500,0,0"/>
+        <TextBlock x:Name="Brooch_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,550,0,0"/>
+        <TextBlock x:Name="Earring_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,600,0,0"/>
+        <TextBlock x:Name="Pendant_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,650,0,0"/>
+        <TextBlock x:Name="Necklace_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,700,0,0"/>
+        <TextBlock x:Name="Crown_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,750,0,0"/>
+        <TextBlock x:Name="Sceptre_GP_Value" Text="TotalGP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="500,800,0,0"/>
+        <!-- endOf totalGoldPieceValueForJewelry -->
+
         <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
         <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Checked="SelectionTypeDisplay"/>
         <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Checked="SelectionTypeDisplay"/>
