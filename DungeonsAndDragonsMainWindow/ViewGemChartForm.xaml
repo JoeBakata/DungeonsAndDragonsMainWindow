@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow"
         mc:Ignorable="d"
         Title="ViewGemChartForm" Height="1000" Width="1200">
-    <Grid> <!-- startOf gemButtons -->
+    <Grid> <!-- startOf gemButtons --> <!-- TODO #2 change labels to textbox similar to jewelrychartform.xaml -->
         <Button x:Name="Quartzbtn" Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,153,0,0" Click="Btn_Click_Quartz" />
         <Button x:Name="Turqoisebtn" Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,183,0,0" Click="Btn_Click_Turquoise" />
         <Button x:Name="Citrinebtn" Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,213,0,0" Click="Btn_Click_Citrine"/>
