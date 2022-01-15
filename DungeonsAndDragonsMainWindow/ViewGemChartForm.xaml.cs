@@ -10,8 +10,6 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewGemChartForm : Window
     {
-        const string Zero = "0";
-
         GetCharts ChartEngine;
         MonsterTypes monsterTypes;
 
@@ -196,7 +194,7 @@ namespace DungeonsAndDragonsMainWindow
         {
             var logicRepository = new DungeonsAndDragons.ChartEngine.Services.GemLogicRepository();
             bool answer = logicRepository.PercentageRolled(monsterTypes);
-            string numberOfGems = "0";
+            string numberOfGems = Constants.Zero;
             ThereAreGemsBoolean.Content = answer.ToString();
             Percentage_Rolled.Content = logicRepository.PercentRollToSeeIfGems;
             if (answer)
@@ -239,41 +237,41 @@ namespace DungeonsAndDragonsMainWindow
             }
             else
             {
-                numberOfGems = Zero;
-                Quartz_GP_Value.Content = Zero;
-                Turquoise_GP_Value.Content = Zero;
-                Citrine_GP_Value.Content = Zero;
-                Onyx_GP_Value.Content = Zero; 
-                Amber_GP_Value.Content = Zero;
-                Garnet_GP_Value.Content = Zero;
-                Pearl_GP_Value.Content = Zero;
-                Topaz_GP_Value.Content = Zero;
-                Opal_GP_Value.Content = Zero;
-                Ruby_GP_Value.Content = Zero;
+                numberOfGems = Constants.Zero;
+                Quartz_GP_Value.Content = Constants.Zero;
+                Turquoise_GP_Value.Content = Constants.Zero;
+                Citrine_GP_Value.Content = Constants.Zero;
+                Onyx_GP_Value.Content = Constants.Zero;
+                Amber_GP_Value.Content = Constants.Zero;
+                Garnet_GP_Value.Content = Constants.Zero;
+                Pearl_GP_Value.Content = Constants.Zero;
+                Topaz_GP_Value.Content = Constants.Zero;
+                Opal_GP_Value.Content = Constants.Zero;
+                Ruby_GP_Value.Content = Constants.Zero;
 
-                Quartz.Content = Zero;
-                Turquoise.Content = Zero;
-                Citrine.Content = Zero;
-                Onyx.Content = Zero;
-                Amber.Content = Zero;
-                Garnet.Content = Zero;
-                Pearl.Content = Zero;
-                Topaz.Content = Zero;
-                Opal.Content = Zero;
-                Ruby.Content = Zero;
+                Quartz.Content = Constants.Zero;
+                Turquoise.Content = Constants.Zero;
+                Citrine.Content = Constants.Zero;
+                Onyx.Content = Constants.Zero;
+                Amber.Content = Constants.Zero;
+                Garnet.Content = Constants.Zero;
+                Pearl.Content = Constants.Zero;
+                Topaz.Content = Constants.Zero;
+                Opal.Content = Constants.Zero;
+                Ruby.Content = Constants.Zero;
 
-                Quartz_Individual_GP_Value.Content = Zero;
-                Turquoise_Individual_GP_Value.Content = Zero;
-                Citrine_Individual_GP_Value.Content = Zero;
-                Onyx_Individual_GP_Value.Content = Zero;
-                Amber_Individual_GP_Value.Content = Zero;
-                Garnet_Individual_GP_Value.Content = Zero;
-                Pearl_Individual_GP_Value.Content = Zero;
-                Topaz_Individual_GP_Value.Content = Zero;
-                Opal_Individual_GP_Value.Content = Zero;
-                Ruby_Individual_GP_Value.Content = Zero;
+                Quartz_Individual_GP_Value.Content = Constants.Zero;
+                Turquoise_Individual_GP_Value.Content = Constants.Zero;
+                Citrine_Individual_GP_Value.Content = Constants.Zero;
+                Onyx_Individual_GP_Value.Content = Constants.Zero;
+                Amber_Individual_GP_Value.Content = Constants.Zero;
+                Garnet_Individual_GP_Value.Content = Constants.Zero;
+                Pearl_Individual_GP_Value.Content = Constants.Zero;
+                Topaz_Individual_GP_Value.Content = Constants.Zero;
+                Opal_Individual_GP_Value.Content = Constants.Zero;
+                Ruby_Individual_GP_Value.Content = Constants.Zero;
 
-                TotalNumberOfGemsValue.Content = Zero;
+                TotalNumberOfGemsValue.Content = Constants.Zero;
             }
         }
 
