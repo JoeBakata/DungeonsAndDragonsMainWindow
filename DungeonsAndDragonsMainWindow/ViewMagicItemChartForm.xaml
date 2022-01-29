@@ -15,6 +15,10 @@
         <Label x:Name="Number_Of_Rollslbl" Content="NumberOfRollslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,210,0,0" Width="160"/>
         <Label x:Name="Max_Roll_Valuelbl" Content="MaxRollValuelbl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,240,0,0" Width="160"/>
         <Label x:Name="Magic_Item_Types_Formatted" Content="MagicItemTypesFormatted" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,270,0,0" Width="160"/>
+        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,300,0,0" Width="160" Click="Roll_Click" IsEnabled="False" />
+        <Label x:Name="IsTreasure" Content="IsTreasure" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,330,0,0" Width="160"/>
+        <Label x:Name="listOfTreasure" Content="magicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,360,0,0" Width="160"/>
+        <Label x:Name="NumberOfMagicItems" Content="?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,390,0,0" Width="160"/>
         <Button x:Name="Monster_Type_Abtn" Content="Monster Type A:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" RenderTransformOrigin="1,10.25" Margin="25,45,0,0" Click="Monster_Type_Abtn_Click" Height="25"/>
         <Button x:Name="Monster_Type_Bbtn" Content="Monster Type B:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.4,1" Margin="25,86,0,0" Click="Monster_Type_Bbtn_Click" Height="25"/>
         <Button x:Name="Copperbtn" Content="Copper:&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,15,0,0" Click="Copperbtn_Click"/>

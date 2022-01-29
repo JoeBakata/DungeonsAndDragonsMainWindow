@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using DungeonsAndDragons.ChartEngine.Utilities;
 using DungeonsAndDragons.ChartEngine.Charts;
+using DungeonsAndDragons.ChartEngine.Services;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -11,64 +12,65 @@ namespace DungeonsAndDragonsMainWindow
     {
         GetCharts getCharts;
         MonsterTypes monsterTypes;
-
+        MagicItemLogicRepository magicItemLogicRepository;
         public ViewMagicItemChartForm()
         {
             InitializeComponent();
             getCharts = new GetCharts();
+            magicItemLogicRepository = new MagicItemLogicRepository(getCharts);
+
         }
         #region Monsters_A_To_K_ButtonClick
         private void Monster_Type_Abtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.A;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
         }
 
         private void Monster_Type_Bbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.B;
-            ChangeMonsterTypeLabel();
-
+            ChangeMonsterTypeLabelAndEnableRoll();
         }
 
         private void Monster_Type_Cbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.C;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Dbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.D;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
         }
 
         private void Monster_Type_Ebtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.E;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Fbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.F;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Gbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.G;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Hbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.H;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
 
         }
@@ -76,7 +78,7 @@ namespace DungeonsAndDragonsMainWindow
         private void Monster_Type_Ibtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.I;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
 
         }
@@ -84,7 +86,7 @@ namespace DungeonsAndDragonsMainWindow
         private void Monster_Type_Jbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.J;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
 
         }
@@ -92,7 +94,7 @@ namespace DungeonsAndDragonsMainWindow
         private void Monster_Type_Kbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.K;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
 
         }
@@ -102,77 +104,77 @@ namespace DungeonsAndDragonsMainWindow
         private void Monster_Type_Lbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.L;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Mbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.M;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Nbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.N;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Obtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.O;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Pbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.P;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Qbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.Q;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Rbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.R;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Sbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.S;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Tbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.T;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Ubtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.U;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
 
         private void Monster_Type_Vbtn_Click(object sender, RoutedEventArgs e)
         {
             monsterTypes = MonsterTypes.V;
-            ChangeMonsterTypeLabel();
+            ChangeMonsterTypeLabelAndEnableRoll();
 
         }
         #endregion Monsters_L_To_V_ButtonClick
@@ -204,9 +206,10 @@ namespace DungeonsAndDragonsMainWindow
         }
         #endregion MonetaryButtonClick
 
-        private void ChangeMonsterTypeLabel()
+        private void ChangeMonsterTypeLabelAndEnableRoll()
         {
             Monsterlbl.Content = monsterTypes.ToString();
+            Roll.IsEnabled = true;
         }
 
         private void ChangeMagicItemChartLabel(MonetaryTreasureTypes treasure)
@@ -220,5 +223,24 @@ namespace DungeonsAndDragonsMainWindow
             Max_Roll_Valuelbl.Content = magicItemTreasure.MaxRollValue.ToString();
             Magic_Item_Types_Formatted.Content = magicItemTreasure.MagicItemTypesFormatted.ToString();
         }
-    }
+
+        private void Roll_Click(object sender, RoutedEventArgs e)
+        {
+            if (magicItemLogicRepository.IsTreasureAvailable(monsterTypes))
+            {
+                IsTreasure.Content = "true";
+                // Now we have to determine what magic items charts to roll on
+                magicItemLogicRepository.WhatMagicItemsAreAvailable(monsterTypes);
+                listOfTreasure.Content = magicItemLogicRepository.List;
+                NumberOfMagicItems.Content = magicItemLogicRepository.NumberOfMagicItems.ToString();
+            }
+            else
+            {
+                IsTreasure.Content = "false";
+                listOfTreasure.Content = string.Empty;
+                NumberOfMagicItems.Content = "zero";
+            }
+        }
+
+    }//todo Format the display similar to the others.
 }
