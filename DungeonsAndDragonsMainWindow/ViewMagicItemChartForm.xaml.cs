@@ -233,14 +233,25 @@ namespace DungeonsAndDragonsMainWindow
                 magicItemLogicRepository.WhatMagicItemsAreAvailable(monsterTypes);
                 listOfTreasure.Content = magicItemLogicRepository.List;
                 NumberOfMagicItems.Content = magicItemLogicRepository.NumberOfMagicItems.ToString();
+                RevealMagicItems.IsEnabled = true;
             }
             else
             {
                 IsTreasure.Content = "false";
                 listOfTreasure.Content = string.Empty;
                 NumberOfMagicItems.Content = "zero";
+                RevealMagicItems.IsEnabled = false;
+                ActualRolledMagicItem.Content = string.Empty;
+                ChoosenMagicItems.Content = string.Empty;
             }
         }
+        private void RollMagicItemClick(object sender, RoutedEventArgs e)
+        {
+            magicItemLogicRepository.RollForMagicSubtable();
+            ChoosenMagicItems.Content = magicItemLogicRepository.Items;
+            ActualRolledMagicItem.Content = magicItemLogicRepository.ShowRoll.ToString();
+            RevealMagicItems.IsEnabled = false;
+        }
 
-    }//todo Format the display similar to the others.
+    }
 }
