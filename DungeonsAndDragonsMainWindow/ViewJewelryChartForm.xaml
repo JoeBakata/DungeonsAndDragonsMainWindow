@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="ViewJewelryChartForm" Height="1000" Width="1200">
     <Grid>
+        
         <Label x:Name="JewleryTypelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="382,130,0,0"/>
         <Label x:Name="MinimumGPValuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="382,170,0,0"/>
         <Label x:Name="MaximumGPValuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,201,0,0"/>

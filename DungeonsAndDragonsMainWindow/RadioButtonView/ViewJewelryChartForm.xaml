@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="ViewJewelryChartForm" Height="1000" Width="1200">
     <Grid> 
-        <!-- startOf Labels --> <!-- todo 2. Lots of work for this one yet. See below about the monsters. Why no dice roll for value or percentage chance?-->
-        <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,100,0,0"/>
-        <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="270,140,0,0"/>
-        <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,180,0,0"/>
-        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,220,0,0" Click="Roll_Click" IsEnabled="False"/>
-        <Label Content="ThereAreJewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,260,0,0"/>
-        <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,300,0,0"/>
-        <Label Content="Total Number Of Jewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,340,0,0"/>
-        <!-- endOf Labels -->  
+        <!-- startOf Labels -->
+        <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,100,0,0" Height="25" />
+        <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,150,0,0"/>
+        <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,180,0,0"/>
+        <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,210,0,0" Click="Roll_Click" IsEnabled="False"/>
+        <Label Content="ThereAreJewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,240,0,0"/>
+        <Label Content="Percentage Rolled:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,270,0,0"/>
+        <Label Content="Total Number Of Jewels:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,300,0,0"/>
+        <!-- endOf Labels -->  <!-- Why do the above Label have no name? We gave all other labels in other forms names.  -->
         
         <!-- startOf Changing values -->
-        <TextBlock x:Name="Jewlery_Typelbl" Text="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="500,100,0,0"/>
-        <TextBlock x:Name="Minimum_GP_Valuelbl" Text="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="500,140,0,0"/>
-        <TextBlock x:Name="Maximum_GP_Valuelbl" Text="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="500,180,0,0"/>
-        <TextBlock x:Name="ThereAreJewelsBoolean" Text="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" VerticalAlignment="Top" Width="95"/>
-        <TextBlock x:Name="Percentage_Rolled" Text="Actual%" HorizontalAlignment="Left" Height="25" Margin="500,300,0,0" VerticalAlignment="Top" Width="107"/>
-        <TextBlock x:Name="TotalNumberOfJewelsValue" Text="NumberOfJewels" HorizontalAlignment="Left" Height="25" Margin="500,340,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBlock x:Name="Jewlery_Typelbl" Text="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,100,0,0" Height="25" />
+        <TextBlock x:Name="Minimum_GP_Valuelbl" Text="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,150,0,0"/>
+        <TextBlock x:Name="Maximum_GP_Valuelbl" Text="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,180,0,0"/>
+        <TextBlock x:Name="ThereAreJewelsBoolean" Text="BooleanValue" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="350,210,0,0" Width="95" Height="25" />
+        <TextBlock x:Name="Percentage_Rolled" Text="Actual%" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0" Width="107" Height="25" />
+        <TextBlock x:Name="TotalNumberOfJewelsValue" Text="NumberOfJewels" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0" Width="109" Height="25" />
 
         <!-- endOf Changing values -->
 
@@ -105,17 +105,17 @@
         <!-- endOf totalGoldPieceValueForJewelry -->
 
         <!-- startOf Types of jewelry radio buttons. Why Monster Types? A-I, M, U, & V all have chance to have jewelry -->
-        <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Broochrdbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,160,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Earringrdbtn" Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,190,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Pendantrdbtn" Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,220,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Necklacerdbtn" Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,250,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Crownrdbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,280,0,0" Checked="SelectionTypeDisplay"/>
-        <RadioButton x:Name="Sceptrerdbtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,310,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Braceletrdbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,150,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Pinrdbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,180,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Broochrdbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,210,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Earringrdbtn" Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,240,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Pendantrdbtn" Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,270,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Necklacerdbtn" Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,300,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Crownrdbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,330,0,0" Checked="SelectionTypeDisplay"/>
+        <RadioButton x:Name="Sceptrerdbtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="50,360,0,0" Checked="SelectionTypeDisplay"/>
          <!-- endOf Types of jewelry radio buttons -->
         
-        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="700,110,0,0"/>
+        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Margin="500,100,0,0"/>
 
     </Grid>
 </Window>

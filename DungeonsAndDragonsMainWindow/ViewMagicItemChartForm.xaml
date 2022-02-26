@@ -18,11 +18,11 @@
         <Label x:Name="Magic_Item_Types_Formatted" Content="MagicItemTypesFormatted" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,300,0,0" Width="160"/>
         <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,330,0,0" Width="160" Click="Roll_Click" IsEnabled="False"/>
         <Label x:Name="IsTreasure" Content="IsTreasure" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,360,0,0" Width="160"/>
-        <Label x:Name="listOfTreasure" Content="magicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,390,0,0" Width="160"/>
+        <Label x:Name="listOfTreasure" Content="magicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,390,0,0" Width="260"/>
         <Label x:Name="NumberOfMagicItems" Content="numberMagicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,420,0,0" Width="160"/>
         <Button x:Name="RevealMagicItems" Content="RevealMagicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,450,0,0" Width="160" Click="RollMagicItemClick" IsEnabled="False"/>
-        <Label x:Name="ChoosenMagicItems" Content="ChoosenMagicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,480,0,0" Width="160"/>
-        <Label x:Name="ActualRolledMagicItem" Content="ActualRolledMagicItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,510,0,0" Width="160"/>
+        <Label x:Name="ChoosenMagicItems" Content="ChoosenMagicItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,480,0,0" Width="1000"/>
+        <Label x:Name="ActualRolledMagicItem" Content="ActualRolledMagicItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,510,0,0" Width="260"/>
         <!-- endOfChangingValues -->
 
         <!-- startOfLabels -->

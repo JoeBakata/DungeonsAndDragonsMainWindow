@@ -258,5 +258,5 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             Monster_Type_Selected.Content = $"You selected monster type: {_monsterTypes}";
             Roll.IsEnabled = true;
         }
-    }// Bracelet, Pin, Brooch, Earring, Pendant, Necklace, crown, Scepter
+    }
 }

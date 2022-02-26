@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="ViewGemChartForm" Height="1000" Width="1200">
     <Grid> <!-- startOf gemButtons --> <!-- TODO #2 change labels to textbox similar to jewelrychartform.xaml -->
-        <Button x:Name="Quartzbtn" Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,153,0,0" Click="Btn_Click_Quartz" />
-        <Button x:Name="Turqoisebtn" Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,183,0,0" Click="Btn_Click_Turquoise" />
-        <Button x:Name="Citrinebtn" Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,213,0,0" Click="Btn_Click_Citrine"/>
-        <Button x:Name="Onyxbtn" Content="Onyx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,243,0,0" Click="Btn_Click_Onyx"/>
-        <Button x:Name="Amberbtn" Content="Amber" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,273,0,0" Click="Btn_Click_Amber"/>
-        <Button x:Name="Garnetbtn" Content="Garnet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,303,0,0" Click="Btn_Click_Garnet"/>
-        <Button x:Name="Pearlbtn" Content="Pearl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,333,0,0" Click="Btn_Click_Pearl"/>
-        <Button x:Name="Topazbtn" Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,363,0,0" Click="Btn_Click_Topaz"/>
-        <Button x:Name="Opalbtn" Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,393,0,0" Click="Btn_Click_Opel"/>
-        <Button x:Name="Rubybtn" Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,423,0,0" Click="Btn_Click_Ruby"/>
+        <Button x:Name="Quartzbtn" Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,150,0,0" Click="Btn_Click_Quartz" />
+        <Button x:Name="Turqoisebtn" Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,180,0,0" Click="Btn_Click_Turquoise" />
+        <Button x:Name="Citrinebtn" Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,210,0,0" Click="Btn_Click_Citrine"/>
+        <Button x:Name="Onyxbtn" Content="Onyx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,240,0,0" Click="Btn_Click_Onyx"/>
+        <Button x:Name="Amberbtn" Content="Amber" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,270,0,0" Click="Btn_Click_Amber"/>
+        <Button x:Name="Garnetbtn" Content="Garnet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,300,0,0" Click="Btn_Click_Garnet"/>
+        <Button x:Name="Pearlbtn" Content="Pearl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,330,0,0" Click="Btn_Click_Pearl"/>
+        <Button x:Name="Topazbtn" Content="Topaz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,360,0,0" Click="Btn_Click_Topaz"/>
+        <Button x:Name="Opalbtn" Content="Opal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,390,0,0" Click="Btn_Click_Opel"/>
+        <Button x:Name="Rubybtn" Content="Ruby" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,420,0,0" Click="Btn_Click_Ruby"/>
         <!-- endOf gemButtons -->
         
         <!-- startOf Labels-->
@@ -43,31 +43,31 @@
         <!-- endOf changingValues -->
 
         <!-- startOf monsterTypesA-K -->
-        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,150,0,0" Click="MonsterTypeA" />
-        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,180,0,0" Click="MonsterTypeB" />
-        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,210,0,0" Click="MonsterTypeC" />
-        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,240,0,0" Click="MonsterTypeD" />
-        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,270,0,0" Click="MonsterTypeE" />
-        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,300,0,0" Click="MonsterTypeF" />
-        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,330,0,0" Click="MonsterTypeG" />
-        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,360,0,0" Click="MonsterTypeH" />
-        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,390,0,0" Click="MonsterTypeI" />
-        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,420,0,0" Click="MonsterTypeJ" />
-        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,450,0,0" Click="MonsterTypeK" />
+        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,150,0,0" Click="MonsterTypeA"/>
+        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,180,0,0" Click="MonsterTypeB"/>
+        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,210,0,0" Click="MonsterTypeC"/>
+        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,240,0,0" Click="MonsterTypeD"/>
+        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,270,0,0" Click="MonsterTypeE"/>
+        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,300,0,0" Click="MonsterTypeF"/>
+        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,330,0,0" Click="MonsterTypeG"/>
+        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,360,0,0" Click="MonsterTypeH"/>
+        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,390,0,0" Click="MonsterTypeI"/>
+        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,420,0,0" Click="MonsterTypeJ"/>
+        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="500,450,0,0" Click="MonsterTypeK"/>
         <!-- endOf monsterTypesA-K -->
         
         <!-- startOf monsterTypesL-V -->
-        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,150,0,0" Click="MonsterTypeL" />
-        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,180,0,0" Click="MonsterTypeM" />
-        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,210,0,0" Click="MonsterTypeN" />
-        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,240,0,0" Click="MonsterTypeO" />
-        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,270,0,0" Click="MonsterTypeP" />
-        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,300,0,0" Click="MonsterTypeQ" />
-        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,330,0,0" Click="MonsterTypeR" />
-        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,360,0,0" Click="MonsterTypeS" />
-        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,390,0,0" Click="MonsterTypeT" />
-        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,420,0,0" Click="MonsterTypeU" />
-        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,450,0,0" Click="MonsterTypeV" />
+        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,150,0,0" Click="MonsterTypeL"/>
+        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,180,0,0" Click="MonsterTypeM"/>
+        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,210,0,0" Click="MonsterTypeN"/>
+        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,240,0,0" Click="MonsterTypeO"/>
+        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,270,0,0" Click="MonsterTypeP"/>
+        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,300,0,0" Click="MonsterTypeQ"/>
+        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,330,0,0" Click="MonsterTypeR"/>
+        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,360,0,0" Click="MonsterTypeS"/>
+        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,390,0,0" Click="MonsterTypeT"/>
+        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,420,0,0" Click="MonsterTypeU"/>
+        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="700,450,0,0" Click="MonsterTypeV"/>
         <!-- endOf monsterTypesM-V -->
         
         <!-- startOf gemLabels -->
@@ -100,33 +100,33 @@
 
         <!-- startOf individualGPValueLabel  -->
         <Label x:Name="Each_GP_Value" Content="EachGemGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,470,0,0"/>
-        <Label x:Name="Quartz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,500,0,0"/>
-        <Label x:Name="Turquoise_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,530,0,0"/>
-        <Label x:Name="Citrine_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,560,0,0"/>
-        <Label x:Name="Onyx_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,590,0,0"/>
-        <Label x:Name="Amber_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,620,0,0"/>
-        <Label x:Name="Garnet_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,650,0,0"/>
-        <Label x:Name="Pearl_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,680,0,0"/>
-        <Label x:Name="Topaz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,710,0,0"/>
-        <Label x:Name="Opal_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,740,0,0"/>
-        <Label x:Name="Ruby_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="250,770,0,0"/>
+        <Label x:Name="Quartz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,500,0,0"/>
+        <Label x:Name="Turquoise_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,530,0,0"/>
+        <Label x:Name="Citrine_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,560,0,0"/>
+        <Label x:Name="Onyx_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,590,0,0"/>
+        <Label x:Name="Amber_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,620,0,0"/>
+        <Label x:Name="Garnet_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,650,0,0"/>
+        <Label x:Name="Pearl_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,680,0,0"/>
+        <Label x:Name="Topaz_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,710,0,0"/>
+        <Label x:Name="Opal_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,740,0,0"/>
+        <Label x:Name="Ruby_Individual_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Margin="250,770,0,0"/>
         <!-- endOf individualGPValueLabel -->
         
         <!-- startOf goldPieceValueForEachGemPiece -->
-        <Label x:Name="Total_GP_Value" Content="TotalGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,470,0,0"/>
-        <Label x:Name="Quartz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,500,0,0"/>
-        <Label x:Name="Turquoise_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,530,0,0"/>
-        <Label x:Name="Citrine_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,560,0,0"/>
-        <Label x:Name="Onyx_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,590,0,0"/>
-        <Label x:Name="Amber_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,620,0,0"/>
-        <Label x:Name="Garnet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,650,0,0"/>
-        <Label x:Name="Pearl_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,680,0,0"/>
-        <Label x:Name="Topaz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,710,0,0"/>
-        <Label x:Name="Opal_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,740,0,0"/>
-        <Label x:Name="Ruby_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="470,770,0,0"/>
+        <Label x:Name="Total_GP_Value" Content="TotalGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,470,0,0"/>
+        <Label x:Name="Quartz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,500,0,0"/>
+        <Label x:Name="Turquoise_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,530,0,0"/>
+        <Label x:Name="Citrine_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,560,0,0"/>
+        <Label x:Name="Onyx_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,590,0,0"/>
+        <Label x:Name="Amber_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,620,0,0"/>
+        <Label x:Name="Garnet_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,650,0,0"/>
+        <Label x:Name="Pearl_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,680,0,0"/>
+        <Label x:Name="Topaz_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,710,0,0"/>
+        <Label x:Name="Opal_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,740,0,0"/>
+        <Label x:Name="Ruby_GP_Value" Content="GP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="650,770,0,0"/>
         <!--  endOf goldPieceValueForEachGemPiece -->
 
-        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" RenderTransformOrigin="6.053,5.2" Margin="850,150,0,0"/>
+        <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Margin="850,150,0,0"/>
 <!-- add the rest of the monster types and the corisponding methods -->
     </Grid>
 </Window>
