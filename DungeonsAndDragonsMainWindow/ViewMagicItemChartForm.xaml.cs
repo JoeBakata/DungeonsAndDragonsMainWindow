@@ -210,6 +210,14 @@ namespace DungeonsAndDragonsMainWindow
         {
             Monsterlbl.Content = monsterTypes.ToString();
             Roll.IsEnabled = true;
+            // Added the following lines to try to do what you asked of me
+            IsTreasure.Content = "false";
+            listOfTreasure.Content = string.Empty;
+            NumberOfMagicItems.Content = "zero";
+            RevealMagicItems.IsEnabled = false;
+            ActualRolledMagicItem.Content = string.Empty;
+            ChoosenMagicItems.Content = string.Empty;
+
         }
 
         private void ChangeMagicItemChartLabel(MonetaryTreasureTypes treasure)
@@ -251,7 +259,13 @@ namespace DungeonsAndDragonsMainWindow
             ChoosenMagicItems.Content = magicItemLogicRepository.Items;
             ActualRolledMagicItem.Content = magicItemLogicRepository.ShowRoll.ToString();
             RevealMagicItems.IsEnabled = false;
+            RevealActualMagicItemLoot.IsEnabled = true;
         }
 
+        private void RevealActualMagicItemLootTables(object sender, RoutedEventArgs e)
+        {
+            ActualMagicItemLoot acutalMagicItemLoot = new ActualMagicItemLoot(magicItemLogicRepository.Items.ToString());
+            acutalMagicItemLoot.ShowDialog();
+        }
     }
 }

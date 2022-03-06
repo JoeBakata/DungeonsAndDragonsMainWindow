@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActualMagicItemLoot.xaml.cs">
+      <DependentUpon>ActualMagicItemLoot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RadioButtonView\ViewGemChartForm.xaml.cs">
       <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
     <Compile Include="ViewMonetaryChartForm.xaml.cs">
       <DependentUpon>ViewMonetaryChartForm.xaml</DependentUpon>
     </Compile>
+    <Page Include="ActualMagicItemLoot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

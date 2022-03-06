@@ -46,7 +46,10 @@
         <Button x:Name="Monster_Type_Jbtn" Content="Monster Type J:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="700,370,0,0" Click="Monster_Type_Jbtn_Click"/>
         <Button x:Name="Monster_Type_Kbtn" Content="Monster Type K:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="700,400,0,0" Click="Monster_Type_Kbtn_Click"/>
         <!-- endOfMonsterTypesA-K -->
-        
+
+        <Button x:Name="RevealActualMagicItemLoot" Content="RevealActualMagicItemLoot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="700,450,0,0" Width="160" Click="RevealActualMagicItemLootTables" IsEnabled="False"/>
+
+
         <!-- startOfMonsterTypesL-V -->
         <Button x:Name="Monster_Type_Lbtn" Content="Monster Type L:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="900,100,0,0" Click="Monster_Type_Lbtn_Click"/>
         <Button x:Name="Monster_Type_Mbtn" Content="Monster Type M:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="900,130,0,0" Click="Monster_Type_Mbtn_Click"/>

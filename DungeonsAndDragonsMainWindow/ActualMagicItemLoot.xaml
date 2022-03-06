@@ -1,0 +1,21 @@
+﻿<Window x:Class="DungeonsAndDragonsMainWindow.ActualMagicItemLoot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow"
+        mc:Ignorable="d"
+        Title="ActualMagicItemLoot" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="Jewlery_Typelbl" Text="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,100,0,0" Height="25" />
+        <TextBlock x:Name="Sword_Type" Text="Swords:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,150,0,0" Height="25"/>
+        <TextBlock x:Name="Other_Weapon" Text="OtherWeapons:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,180,0,0" Height="25"/>
+        <TextBlock x:Name="Armor_Shield" Text="ArmorsShields:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,210,0,0" Height="25"/>
+        <TextBlock x:Name="Potion" Text="Potions:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,240,0,0" Height="25"/>
+        <TextBlock x:Name="Scroll" Text="Scrolls:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,270,0,0" Height="25"/>
+        <TextBlock x:Name="Ring" Text="Rings:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,300,0,0" Height="25"/>
+        <TextBlock x:Name="Wand_Stave_Rod" Text="WandsStavesRods:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,330,0,0" Height="25"/>
+        <TextBlock x:Name="Miscellaneous_Item" Text="MiscellaneousItems:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,360,0,0" Height="25"/>
+
+    </Grid>
+</Window>
