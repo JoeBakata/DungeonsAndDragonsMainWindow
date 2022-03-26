@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DungeonsAndDragons.ChartEngine.Charts;
+using DungeonsAndDragons.ChartEngine.Utilities;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -79,28 +80,28 @@ namespace DungeonsAndDragonsMainWindow
             {
                 switch (magicItemElement)
                 {
-                    case "Sword":
+                    case Constants.Sword:
                         swordVariable = swordVariable == string.Empty ? magicItemElement : $"{swordVariable} {magicItemElement}";
-                            break;
-                    case "OtherWeapons":
+                        break;
+                    case Constants.OtherWeapons:
                         otherWeaponVariable = otherWeaponVariable == string.Empty ? magicItemElement : $"{otherWeaponVariable} {magicItemElement}";
                         break;
-                    case "ArmorShields":
+                    case Constants.ArmorShields:
                         armorShieldVariable = armorShieldVariable == string.Empty ? magicItemElement : $"{armorShieldVariable} {magicItemElement}";
                         break;
-                    case "Potions":
+                    case Constants.Potions:
                         potionVariable = potionVariable == string.Empty ? magicItemElement : $"{potionVariable} {magicItemElement}";
                         break;
-                    case "Scrolls":
+                    case Constants.Scrolls:
                         scrollVariable = scrollVariable == string.Empty ? magicItemElement : $"{scrollVariable} {magicItemElement}";
                         break;
-                    case "Rings":
+                    case Constants.Rings:
                         ringVariable = ringVariable == string.Empty ? magicItemElement : $"{ringVariable} {magicItemElement}";
                         break;
-                    case "WandsStavesRods":
+                    case Constants.WandsStavesRods:
                         wandStaveRodVariable = wandStaveRodVariable == string.Empty ? magicItemElement : $"{wandStaveRodVariable} {magicItemElement}";
                         break;
-                    case "MiscellaneousMagic":
+                    case Constants.MiscelaneousMagic:
                         miscellaneousVariable = miscellaneousVariable == string.Empty ? magicItemElement : $"{miscellaneousVariable} {magicItemElement}";
                         break;
                 }
