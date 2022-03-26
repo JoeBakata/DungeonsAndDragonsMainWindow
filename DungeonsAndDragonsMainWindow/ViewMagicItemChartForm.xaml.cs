@@ -242,6 +242,7 @@ namespace DungeonsAndDragonsMainWindow
                 listOfTreasure.Content = magicItemLogicRepository.List;
                 NumberOfMagicItems.Content = magicItemLogicRepository.NumberOfMagicItems.ToString();
                 RevealMagicItems.IsEnabled = true;
+                ActualRolledMagicItem.Content = "zero";// this did not fix the rolls either
             }
             else
             {
@@ -257,7 +258,7 @@ namespace DungeonsAndDragonsMainWindow
         {
             magicItemLogicRepository.RollForMagicSubtable();
             ChoosenMagicItems.Content = magicItemLogicRepository.Items;
-            ActualRolledMagicItem.Content = magicItemLogicRepository.ShowRoll.ToString();
+            ActualRolledMagicItem.Content = string.Join(", ", magicItemLogicRepository.ShowRoll);
             RevealMagicItems.IsEnabled = false;
             RevealActualMagicItemLoot.IsEnabled = true;
         }
@@ -266,6 +267,8 @@ namespace DungeonsAndDragonsMainWindow
         {
             ActualMagicItemLoot acutalMagicItemLoot = new ActualMagicItemLoot(magicItemLogicRepository.Items.ToString());
             acutalMagicItemLoot.ShowDialog();
-        }
+            ActualRolledMagicItem.Content = "zero";
+            RevealActualMagicItemLoot.IsEnabled = false;
+        }                                               
     }
 }
