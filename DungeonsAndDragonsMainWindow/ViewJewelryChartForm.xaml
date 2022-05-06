@@ -11,17 +11,17 @@
         <Label x:Name="JewleryTypelbl" Content="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.263,1.346" Margin="382,130,0,0"/>
         <Label x:Name="MinimumGPValuelbl" Content="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.974,2.692" Margin="382,170,0,0"/>
         <Label x:Name="MaximumGPValuelbl" Content="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,201,0,0"/>
-        <Label Content="Jewlery Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,130,0,0"/>
+        <Label Content="Jewelry Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,130,0,0"/>
         <Label Content="Minimum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,2.115" Margin="240,170,0,0"/>
         <Label Content="Maximum GP Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,201,0,0"/>
-        <Button x:Name="Monster_Type_Bbtn" Content="Braclet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Click="Btn_Click_Bracelet"/>
-        <Button x:Name="Monster_Type_Cbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Click="Btn_Click_Pin"/>
-        <Button x:Name="Monster_Type_Dbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,160,0,0" Click="Btn_Click_Brooch"/>
-        <Button x:Name="Monster_Type_Ebtn" Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,190,0,0" Click="Btn_Click_Earring"/>
-        <Button x:Name="Monster_Type_Fbtn" Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,220,0,0" Click="Btn_Click_Pendant"/>
-        <Button x:Name="Monster_Type_Gbtn" Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,250,0,0" Click="Btn_Click_Necklace"/>
-        <Button x:Name="Monster_Type_Hbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,280,0,0" Click="Btn_Click_Crown"/>
-        <Button x:Name="Monster_Type_Ibtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,310,0,0" Click="Btn_Click_Sceptre"/>
+        <Button x:Name="Monster_Type_Bbtn" Content="Bracelet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,100,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Cbtn" Content="Pin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,130,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Dbtn" Content="Brooch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,160,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Ebtn" Content="Earring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,190,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Fbtn" Content="Pendant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,220,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Gbtn" Content="Necklace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,250,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Hbtn" Content="Crown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,280,0,0" Click="SetJewelryLabel"/>
+        <Button x:Name="Monster_Type_Ibtn" Content="Sceptre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="10,310,0,0" Click="SetJewelryLabel"/>
 
     </Grid>
 </Window>

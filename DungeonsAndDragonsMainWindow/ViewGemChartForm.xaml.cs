@@ -183,11 +183,11 @@ namespace DungeonsAndDragonsMainWindow
         {
             var gemTreasures = ChartEngine.GemGPValueChart;
             var list = gemTreasures.First(x => x.GemType == gemType);
-            Gem_Typelbl.Content = gemType.ToString();
-            Minimum_GP_Valuelbl.Content = list.MinimumGPValue.ToString();
-            Minimum_Roll_Valuelbl.Content = list.MinimumRollValue.ToString();
-            Maximum_Roll_Valuelbl.Content = list.MaximumRollValue.ToString();
-            Dicelbl.Content = list.Dice.ToString();
+            Gem_Typelbl.Text = gemType.ToString();
+            Minimum_GP_Valuelbl.Text = list.MinimumGPValue.ToString();
+            Minimum_Roll_Valuelbl.Text = list.MinimumRollValue.ToString();
+            Maximum_Roll_Valuelbl.Text = list.MaximumRollValue.ToString();
+            Dicelbl.Text = list.Dice.ToString();
         }
 
         private void Roll_Click(object sender, RoutedEventArgs e)
@@ -195,12 +195,12 @@ namespace DungeonsAndDragonsMainWindow
             var logicRepository = new DungeonsAndDragons.ChartEngine.Services.GemLogicRepository();
             bool answer = logicRepository.PercentageRolled(monsterTypes);
             string numberOfGems = Constants.Zero;
-            ThereAreGemsBoolean.Content = answer.ToString();
-            Percentage_Rolled.Content = logicRepository.PercentRollToSeeIfGems;
+            ThereAreGemsBoolean.Text = answer.ToString();
+            Percentage_Rolled.Text = logicRepository.PercentRollToSeeIfGems;
             if (answer)
             {
                 numberOfGems = logicRepository.GetNumberOfGems(monsterTypes);
-                TotalNumberOfGemsValue.Content = numberOfGems;
+                TotalNumberOfGemsValue.Text = numberOfGems;
                 logicRepository.GetGemNumbers(numberOfGems);
                 Quartz.Content = logicRepository.Quartz.ToString();
                 Turquoise.Content = logicRepository.Turquoise.ToString();
@@ -271,7 +271,7 @@ namespace DungeonsAndDragonsMainWindow
                 Opal_Individual_GP_Value.Content = Constants.Zero;
                 Ruby_Individual_GP_Value.Content = Constants.Zero;
 
-                TotalNumberOfGemsValue.Content = Constants.Zero;
+                TotalNumberOfGemsValue.Text = Constants.Zero;
             }
         }
 

@@ -20,45 +20,50 @@ namespace DungeonsAndDragonsMainWindow
         #region ButtonClick
         private void Btn_Click_Bracelet(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Bracelet");
+            JewelryLabel("Bracelet");
         }
 
         private void Btn_Click_Pin(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Pin");
+            JewelryLabel("Pin");
         }
 
         private void Btn_Click_Brooch(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Brooch");
+            JewelryLabel("Brooch");
         }
 
         private void Btn_Click_Earring(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Earring");
+            JewelryLabel("Earring");
         }
 
         private void Btn_Click_Pendant(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Pendant");
+            JewelryLabel("Pendant");
         }
 
         private void Btn_Click_Necklace(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Necklace");
+            JewelryLabel("Necklace");
         }
 
         private void Btn_Click_Crown(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Crown");
+            JewelryLabel("Crown");
         }
 
         private void Btn_Click_Sceptre(object sender, RoutedEventArgs e)
         {
-            JewleryLabel("Sceptre");
+            JewelryLabel("Sceptre");
         }
         #endregion ButtonClick
-        private void JewleryLabel(string jewleryType)
+
+        private void SetJewelryLabel(object sender, RoutedEventArgs e)
+        {
+            string jewelry = sender.ToString();
+        }
+        private void JewelryLabel(string jewleryType)
         {
             DungeonsAndDragons.ChartEngine.Charts.Treasure.JewelryValue element = ChartEngine.JewelryGPValueChart.First(x => x.JewelryType.ToString() == jewleryType);
             JewleryTypelbl.Content = element.JewelryType.ToString();

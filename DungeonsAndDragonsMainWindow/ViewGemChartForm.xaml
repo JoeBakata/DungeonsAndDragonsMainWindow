@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow"
         mc:Ignorable="d"
         Title="ViewGemChartForm" Height="1000" Width="1200">
-    <Grid> <!-- startOf gemButtons --> <!-- TODO #2 change labels to textbox similar to jewelrychartform.xaml -->
+    <Grid> <!-- startOf gemButtons --> <!-- TODO #2 change labels to text-box similar to jewelrychartform.xaml -->
         <Button x:Name="Quartzbtn" Content="Quartz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,150,0,0" Click="Btn_Click_Quartz" />
         <Button x:Name="Turqoisebtn" Content="Turquoise" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,180,0,0" Click="Btn_Click_Turquoise" />
         <Button x:Name="Citrinebtn" Content="Citrine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,210,0,0" Click="Btn_Click_Citrine"/>
@@ -32,14 +32,14 @@
         <!-- endof Lables -->
 
         <!-- startOf changingValues -->
-        <Label x:Name="Gem_Typelbl" Content="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,150,0,0"/>
-        <Label x:Name="Minimum_GP_Valuelbl" Content="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,180,0,0"/>
-        <Label x:Name="Minimum_Roll_Valuelbl" Content="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,210,0,0"/>
-        <Label x:Name="Maximum_Roll_Valuelbl" Content="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0"/>
-        <Label x:Name="Dicelbl" Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0"/>
-        <Label x:Name="ThereAreGemsBoolean" Content="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="350,330,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="Percentage_Rolled" Content="Acutal%" HorizontalAlignment="Left" Height="25" Margin="350,360,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="TotalNumberOfGemsValue" Content="NumberOfGems" HorizontalAlignment="Left" Height="25" Margin="350,390,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="Gem_Typelbl" Text="GemType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,150,0,0"/>
+        <TextBlock x:Name="Minimum_GP_Valuelbl" Text="MinimumGPValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,180,0,0"/>
+        <TextBlock x:Name="Minimum_Roll_Valuelbl" Text="MinimumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,210,0,0"/>
+        <TextBlock x:Name="Maximum_Roll_Valuelbl" Text="MaximumRollValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,240,0,0"/>
+        <TextBlock x:Name="Dicelbl" Text="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,270,0,0"/>
+        <TextBlock x:Name="ThereAreGemsBoolean" Text="BooleanValue" HorizontalAlignment="Left" Height="25" Margin="350,330,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="Percentage_Rolled" Text="Actual%" HorizontalAlignment="Left" Height="25" Margin="350,360,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBlock x:Name="TotalNumberOfGemsValue" Text="NumberOfGems" HorizontalAlignment="Left" Height="25" Margin="350,390,0,0" VerticalAlignment="Top" Width="100"/>
         <!-- endOf changingValues -->
 
         <!-- startOf monsterTypesA-K -->
@@ -127,6 +127,6 @@
         <!--  endOf goldPieceValueForEachGemPiece -->
 
         <Label x:Name="Monster_Type_Selected" Content="MonsterTypeSelected" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Margin="850,150,0,0"/>
-<!-- add the rest of the monster types and the corisponding methods -->
+<!-- add the rest of the monster types and the corresponding methods -->
     </Grid>
 </Window>

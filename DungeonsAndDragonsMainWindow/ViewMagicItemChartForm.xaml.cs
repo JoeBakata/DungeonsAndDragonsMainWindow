@@ -2,6 +2,7 @@
 using DungeonsAndDragons.ChartEngine.Utilities;
 using DungeonsAndDragons.ChartEngine.Charts;
 using DungeonsAndDragons.ChartEngine.Services;
+using System.Collections.Generic;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -10,6 +11,10 @@ namespace DungeonsAndDragonsMainWindow
     /// </summary>
     public partial class ViewMagicItemChartForm : Window
     {
+        private readonly List<MonsterTypes> NoMagicItemsForTheseMonsters = new List<MonsterTypes>() 
+        {MonsterTypes.J, MonsterTypes.K, MonsterTypes.L, MonsterTypes.M, MonsterTypes.P, MonsterTypes.Q, MonsterTypes.R, MonsterTypes.S, MonsterTypes.T};
+        private const string RemoveBoilerPlate = "System.Windows.Controls.Button: Monster Type ";
+        private const string RemoveMoreBoilerPlate = "System.Windows.Controls.Button: ";
         GetCharts getCharts;
         MonsterTypes monsterTypes;
         MagicItemLogicRepository magicItemLogicRepository;
@@ -20,198 +25,22 @@ namespace DungeonsAndDragonsMainWindow
             magicItemLogicRepository = new MagicItemLogicRepository(getCharts);
 
         }
-        #region Monsters_A_To_K_ButtonClick
-        private void Monster_Type_Abtn_Click(object sender, RoutedEventArgs e)
+        private void Monster_Type_Click(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.A;
+            SetMonsterType(sender.ToString());
             ChangeMonsterTypeLabelAndEnableRoll();
         }
 
-        private void Monster_Type_Bbtn_Click(object sender, RoutedEventArgs e)
+        private void Monetarybtn_Click(object sender, RoutedEventArgs e)
         {
-            monsterTypes = MonsterTypes.B;
-            ChangeMonsterTypeLabelAndEnableRoll();
+            ChangeMagicItemChartLabel(SetMonetaryType(sender.ToString()));
         }
-
-        private void Monster_Type_Cbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.C;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Dbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.D;
-            ChangeMonsterTypeLabelAndEnableRoll();
-        }
-
-        private void Monster_Type_Ebtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.E;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Fbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.F;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Gbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.G;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Hbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.H;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-
-        }
-
-        private void Monster_Type_Ibtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.I;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-
-        }
-
-        private void Monster_Type_Jbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.J;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-
-        }
-
-        private void Monster_Type_Kbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.K;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-
-        }
-        #endregion Monsters_A_To_K_ButtonClick
-
-        #region Monsters_L_To_V_ButtonClick
-        private void Monster_Type_Lbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.L;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Mbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.M;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Nbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.N;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Obtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.O;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Pbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.P;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Qbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.Q;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Rbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.R;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Sbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.S;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Tbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.T;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Ubtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.U;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-
-        private void Monster_Type_Vbtn_Click(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.V;
-            ChangeMonsterTypeLabelAndEnableRoll();
-
-        }
-        #endregion Monsters_L_To_V_ButtonClick
-
-        #region MonetaryButtonClick
-        private void Copperbtn_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeMagicItemChartLabel(MonetaryTreasureTypes.Copper);
-        }
-
-        private void Silverbtn_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeMagicItemChartLabel(MonetaryTreasureTypes.Silver);
-        }
-
-        private void Electrumbtn_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeMagicItemChartLabel(MonetaryTreasureTypes.Electrum);
-        }
-
-        private void Goldbtn_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeMagicItemChartLabel(MonetaryTreasureTypes.Gold);
-        }
-
-        private void Platinumbtn_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeMagicItemChartLabel(MonetaryTreasureTypes.Platinum);
-        }
-        #endregion MonetaryButtonClick
 
         private void ChangeMonsterTypeLabelAndEnableRoll()
         {
             Monsterlbl.Content = monsterTypes.ToString();
             Roll.IsEnabled = true;
-            // Added the following lines to try to do what you asked of me
-            IsTreasure.Content = "false";
+            IsTreasure.Content = NoMagicItemsForTheseMonsters.Contains(monsterTypes) ? "No Magic Items Here!" : "false";
             listOfTreasure.Content = string.Empty;
             NumberOfMagicItems.Content = "zero";
             RevealMagicItems.IsEnabled = false;
@@ -256,6 +85,7 @@ namespace DungeonsAndDragonsMainWindow
         }
         private void RollMagicItemClick(object sender, RoutedEventArgs e)
         {
+            magicItemLogicRepository.ResetShowRoll();
             magicItemLogicRepository.RollForMagicSubtable();
             ChoosenMagicItems.Content = magicItemLogicRepository.Items;
             ActualRolledMagicItem.Content = string.Join(", ", magicItemLogicRepository.ShowRoll);
@@ -269,6 +99,18 @@ namespace DungeonsAndDragonsMainWindow
             acutalMagicItemLoot.ShowDialog();
             ActualRolledMagicItem.Content = "zero";
             RevealActualMagicItemLoot.IsEnabled = false;
-        }                                               
+        }     
+        
+        private void SetMonsterType(string monsterTypeString)
+        {
+            string newMonsterTypeString = monsterTypeString.Replace(RemoveBoilerPlate, "").Replace(":", "");
+            monsterTypes = getCharts.GetMonsterType(newMonsterTypeString); 
+        }
+
+        private MonetaryTreasureTypes SetMonetaryType(string monetaryTypeString)
+        {
+            string newMonetaryTypeString = monetaryTypeString.Replace(RemoveMoreBoilerPlate, "").Replace(":", "");
+            return getCharts.GetMonetaryTreasureType(newMonetaryTypeString);
+        }
     }
 }
