@@ -13,7 +13,7 @@ namespace DungeonsAndDragonsMainWindow
     {
         private readonly List<MonsterTypes> NoMagicItemsForTheseMonsters = new List<MonsterTypes>() 
         {MonsterTypes.J, MonsterTypes.K, MonsterTypes.L, MonsterTypes.M, MonsterTypes.P, MonsterTypes.Q, MonsterTypes.R, MonsterTypes.S, MonsterTypes.T};
-        private const string RemoveBoilerPlate = "System.Windows.Controls.Button: Monster Type ";
+        private const string RemoveBoilerPlateMonsterType = "System.Windows.Controls.Button: Monster Type ";
         private const string RemoveMoreBoilerPlate = "System.Windows.Controls.Button: ";
         GetCharts getCharts;
         MonsterTypes monsterTypes;
@@ -103,7 +103,7 @@ namespace DungeonsAndDragonsMainWindow
         
         private void SetMonsterType(string monsterTypeString)
         {
-            string newMonsterTypeString = monsterTypeString.Replace(RemoveBoilerPlate, "").Replace(":", "");
+            string newMonsterTypeString = monsterTypeString.Replace(RemoveBoilerPlateMonsterType, "").Replace(":", "");
             monsterTypes = getCharts.GetMonsterType(newMonsterTypeString); 
         }
 

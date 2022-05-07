@@ -2,6 +2,7 @@
 using System.Windows;
 using DungeonsAndDragons.ChartEngine.Utilities;
 using DungeonsAndDragons.ChartEngine.Charts;
+using DungeonsAndDragons.ChartEngine.Services;
 
 namespace DungeonsAndDragonsMainWindow
 {
@@ -19,166 +20,6 @@ namespace DungeonsAndDragonsMainWindow
             ChartEngine = new GetCharts();
         }
 
-        #region ButtonClickGems
-        public void Btn_Click_Quartz(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Quartz);
-        }
-        public void Btn_Click_Turquoise(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Turquoise);
-        }
-        public void Btn_Click_Citrine(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Citrine);
-        }
-        public void Btn_Click_Onyx(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Onyx);
-        }
-        public void Btn_Click_Amber(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Amber);
-        }
-        public void Btn_Click_Garnet(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Garnet);
-        }
-        public void Btn_Click_Pearl(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Pearl);
-        }
-        public void Btn_Click_Topaz(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Topaz);
-        }
-        public void Btn_Click_Opel(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Opal);
-        }
-        public void Btn_Click_Ruby(object sender, RoutedEventArgs e)
-        {
-            ChangeDisplay(GemType.Ruby);
-        }
-        #endregion ButtonClickGems
-
-        #region monsterTypesA-L
-
-        public void MonsterTypeA(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.A;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeB(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.B;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeC(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.C;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeD(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.D;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeE(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.E;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeF(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.F;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeG(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.G;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeH(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.H;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeI(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.I;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeJ(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.J;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeK(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.K;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeL(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.L;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        #endregion monsterTypesA-L
-
-        #region monsterTypesM-V
-        public void MonsterTypeM(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.M;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeN(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.N;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeO(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.O;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeP(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.P;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeQ(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.Q;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeR(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.R;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeS(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.S;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeT(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.T;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeU(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.U;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        public void MonsterTypeV(object sender, RoutedEventArgs e)
-        {
-            monsterTypes = MonsterTypes.V;
-            RollButtonEnabledByMonsterSelection(monsterTypes);
-        }
-        #endregion monsterTypesM-V
-
         private void ChangeDisplay(GemType gemType)
         {
             var gemTreasures = ChartEngine.GemGPValueChart;
@@ -192,7 +33,7 @@ namespace DungeonsAndDragonsMainWindow
 
         private void Roll_Click(object sender, RoutedEventArgs e)
         {
-            var logicRepository = new DungeonsAndDragons.ChartEngine.Services.GemLogicRepository();
+            var logicRepository = new GemLogicRepository();
             bool answer = logicRepository.PercentageRolled(monsterTypes);
             string numberOfGems = Constants.Zero;
             ThereAreGemsBoolean.Text = answer.ToString();
@@ -275,6 +116,26 @@ namespace DungeonsAndDragonsMainWindow
             }
         }
 
+        private void SetGemLabel(object sender, RoutedEventArgs e)
+        {
+            string gemType = sender.ToString();
+            gemType = FilteredString(gemType, Constants.BoilerPlate);
+            GemType typeOfGem = ChartEngine.GetGemType(gemType);
+            ChangeDisplay(typeOfGem);
+        }
+
+        private void SetMonsterType(object sender, RoutedEventArgs e)
+        {
+            string monsterType = sender.ToString();
+            monsterType = FilteredString(monsterType, Constants.BoilerPlateMonsterType);
+            monsterTypes = ChartEngine.GetMonsterType(monsterType);
+            RollButtonEnabledByMonsterSelection(monsterTypes);
+        }
+        private string FilteredString(string unfilterString, string textToRemove)
+        {
+            string filteredString = unfilterString.Replace(textToRemove, "");
+            return filteredString;
+        }
         private void RollButtonEnabledByMonsterSelection(MonsterTypes monsterTypes)
         {
             Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";

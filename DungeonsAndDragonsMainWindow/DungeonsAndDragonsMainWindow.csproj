@@ -58,23 +58,14 @@
     <Compile Include="ActualMagicItemLoot.xaml.cs">
       <DependentUpon>ActualMagicItemLoot.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RadioButtonView\ViewGemChartForm.xaml.cs">
-      <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RadioButtonView\ViewJewelryChartForm.xaml.cs">
       <DependentUpon>ViewJewelryChartForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="RadioButtonView\ViewMagicItemChartForm.xaml.cs">
-      <DependentUpon>ViewMagicItemChartForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="RadioButtonView\ViewMonetaryChartForm.xaml.cs">
       <DependentUpon>ViewMonetaryChartForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewGemChartForm.xaml.cs">
       <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewJewelryChartForm.xaml.cs">
-      <DependentUpon>ViewJewelryChartForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewMagicItemChartForm.xaml.cs">
       <DependentUpon>ViewMagicItemChartForm.xaml</DependentUpon>
@@ -98,15 +89,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RadioButtonView\ViewGemChartForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="RadioButtonView\ViewJewelryChartForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="RadioButtonView\ViewMagicItemChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,10 +98,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewGemChartForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ViewJewelryChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -25,17 +25,11 @@ C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resou
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\MagicItemData.txt
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\MagicItemSubtableName.txt
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\bin\Debug\Resources\MonetaryChartData.txt
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewJewelryChartForm.g.cs
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewJewelryChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewMagicItemChartForm.g.cs
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ViewMagicItemChartForm.baml
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewGemChartForm.g.cs
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewJewelryChartForm.g.cs
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMagicItemChartForm.g.cs
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMonetaryChartForm.g.cs
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewGemChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewJewelryChartForm.baml
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMagicItemChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\RadioButtonView\ViewMonetaryChartForm.baml
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\DungeonsAndDragonsMainWindow.csproj.CopyComplete
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\ActualMagicItemLoot.g.cs
