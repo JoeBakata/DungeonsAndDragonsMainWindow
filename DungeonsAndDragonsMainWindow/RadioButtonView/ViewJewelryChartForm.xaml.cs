@@ -18,7 +18,7 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             ChartEngine = new GetCharts();
         }
         GetCharts ChartEngine;
-        MonsterTypes monsterTypes;
+        MonsterTypes monsterTypes;// This second monsterTypes suppose to be Capital MonsterTypes?
         const string Zero = "0";
 
         public void SelectionTypeDisplay(object sender, RoutedEventArgs e)

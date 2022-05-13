@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Debug\
+C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\obj\Release\
 DungeonsAndDragonsMainWindow
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Git\DungeonsAndDragonsMainWindow\DungeonsAndDragonsMainWindow\App.xaml
 7-852806126
 
-121220041111
-14-77320586
+112062400478
+142063777820
 ActualMagicItemLoot.xaml;MainWindow.xaml;RadioButtonView\ViewJewelryChartForm.xaml;RadioButtonView\ViewMonetaryChartForm.xaml;ViewGemChartForm.xaml;ViewMagicItemChartForm.xaml;ViewMonetaryChartForm.xaml;
 
 True

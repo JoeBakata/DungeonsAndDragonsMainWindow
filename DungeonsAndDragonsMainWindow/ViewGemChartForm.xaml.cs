@@ -131,9 +131,9 @@ namespace DungeonsAndDragonsMainWindow
             monsterTypes = ChartEngine.GetMonsterType(monsterType);
             RollButtonEnabledByMonsterSelection(monsterTypes);
         }
-        private string FilteredString(string unfilterString, string textToRemove)
+        private string FilteredString(string unfilteredString, string textToRemove)
         {
-            string filteredString = unfilterString.Replace(textToRemove, "");
+            string filteredString = unfilteredString.Replace(textToRemove, "");
             return filteredString;
         }
         private void RollButtonEnabledByMonsterSelection(MonsterTypes monsterTypes)

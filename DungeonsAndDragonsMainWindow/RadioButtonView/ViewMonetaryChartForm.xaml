@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DungeonsAndDragonsMainWindow.RadioButtonView"
         mc:Ignorable="d"
-        Title="ViewMonetaryChartForm" Height="450" Width="800">
-    <Grid>
+        Title="ViewMonetaryTreasureChartForm" Height="1000" Width="1200">
+    <Grid>   
+        <!-- startOfMonetaryButtons --><!--
+        <Button x:Name="Copperbtn" Content="Copper:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,50,0,0" Click="Copperbtn_Click"/>
+        <Button x:Name="Silverbtn" Content="Silver:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,80,0,0" Click="Copperbtn_Click"/>
+        <Button x:Name="Electrumbtn" Content="Electrum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,110,0,0" Click="Copperbtn_Click"/>
+        <Button x:Name="Goldbtn" Content="Gold:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,140,0,0" Click="Copperbtn_Click"/>
+        <Button x:Name="Platinumbtn" Content="Platinum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,170,0,0" Click="Copperbtn_Click"/>
+        --><!-- endOfMonetaryButtons -->
+        
+        <!-- startOfMonsterTypesButtonsA-K --><!--
+        <Button x:Name="Monster_Type_Abtn" Content="Monster Type A:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,50,0,0" Click="Monster_Type_Abtn_Click"/>
+        <Button x:Name="Monster_Type_Bbtn" Content="Monster Type B:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,80,0,0" Click="Monster_Type_Abtn_Click"/>
+        <Button x:Name="Monster_Type_Cbtn" Content="Monster Type C:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,110,0,0" Click="Monster_Type_Abtn_Click"/>
+        <Button x:Name="Monster_Type_Dbtn" Content="Monster Type D:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,140,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Ebtn" Content="Monster Type E:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,170,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Fbtn" Content="Monster Type F:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,200,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Gbtn" Content="Monster Type G:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,230,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Hbtn" Content="Monster Type H:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,260,0,0" Click="Monster_Type_Bbtn_Click"/>-->
+        <!--<Button x:Name="Monster_Type_Ibtn" Content="Monster Type I:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,290,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Jbtn" Content="Monster Type J:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,320,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Kbtn" Content="Monster Type K:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,350,0,0" Click="Monster_Type_Bbtn_Click"/>
+        --><!-- endOfMonsterTypesButtonsA-K -->
+        
+        <!-- startOfMonsterTypesButtonsL-V --><!--
+        <Button x:Name="Monster_Type_Lbtn" Content="Monster Type L:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,50,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Mbtn" Content="Monster Type M:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,80,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Nbtn" Content="Monster Type N:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,110,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Obtn" Content="Monster Type O:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,140,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Pbtn" Content="Monster Type P:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,170,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Qbtn" Content="Monster Type Q:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,200,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Rbtn" Content="Monster Type R:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,230,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Sbtn" Content="Monster Type S:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,260,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Tbtn" Content="Monster Type T:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,290,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Ubtn" Content="Monster Type U:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,320,0,0" Click="Monster_Type_Bbtn_Click"/>
+        <Button x:Name="Monster_Type_Vbtn" Content="Monster Type V:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="400,350,0,0" Click="Monster_Type_Bbtn_Click"/>
+        --><!-- endOfMonsterTypeButtonsL-V --><!--
+        !>-->
+        
         
     </Grid>
 </Window>
