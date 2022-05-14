@@ -58,19 +58,17 @@
     <Compile Include="ActualMagicItemLoot.xaml.cs">
       <DependentUpon>ActualMagicItemLoot.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GeneralMethods.cs" />
     <Compile Include="RadioButtonView\ViewJewelryChartForm.xaml.cs">
       <DependentUpon>ViewJewelryChartForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RadioButtonView\ViewMonetaryChartForm.xaml.cs">
-      <DependentUpon>ViewMonetaryChartForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewGemChartForm.xaml.cs">
+    <Compile Include="ButtonView\ViewGemChartForm.xaml.cs">
       <DependentUpon>ViewGemChartForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewMagicItemChartForm.xaml.cs">
+    <Compile Include="ButtonView\ViewMagicItemChartForm.xaml.cs">
       <DependentUpon>ViewMagicItemChartForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewMonetaryChartForm.xaml.cs">
+    <Compile Include="ButtonView\ViewMonetaryChartForm.xaml.cs">
       <DependentUpon>ViewMonetaryChartForm.xaml</DependentUpon>
     </Compile>
     <Page Include="ActualMagicItemLoot.xaml">
@@ -93,19 +91,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RadioButtonView\ViewMonetaryChartForm.xaml">
+    <Page Include="ButtonView\ViewGemChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewGemChartForm.xaml">
+    <Page Include="ButtonView\ViewMagicItemChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewMagicItemChartForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ViewMonetaryChartForm.xaml">
+    <Page Include="ButtonView\ViewMonetaryChartForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

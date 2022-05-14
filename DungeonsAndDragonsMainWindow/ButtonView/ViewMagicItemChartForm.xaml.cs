@@ -4,7 +4,7 @@ using DungeonsAndDragons.ChartEngine.Charts;
 using DungeonsAndDragons.ChartEngine.Services;
 using System.Collections.Generic;
 
-namespace DungeonsAndDragonsMainWindow
+namespace DungeonsAndDragonsMainWindow.ButtonView
 {
     /// <summary>
     /// Interaction logic for ViewMagicItemChartForm.xaml

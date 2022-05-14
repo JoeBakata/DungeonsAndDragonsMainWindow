@@ -49,7 +49,6 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             string monsterType = sender.ToString();
             monsterType = FilteredString(monsterType, Constants.BoilerPlateMonsterType);
             monsterTypes = ChartEngine.GetMonsterType(monsterType);
-            //RollButtonEnabledByMonsterSelection(monsterTypes);
 
         }
 
@@ -58,13 +57,6 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             string filteredString = unfilteredString.Replace(textToRemove, "");
             return filteredString;
         }
-
-
-        //private void RollButtonEnabledByMonsterSelection(MonsterTypes monsterTypes)
-        //{
-        //    Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
-        //    Roll.IsEnabled = true;
-        //}
         #endregion Private Methods
     }
 }

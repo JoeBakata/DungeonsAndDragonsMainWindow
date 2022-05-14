@@ -14,13 +14,13 @@ namespace DungeonsAndDragonsMainWindow
 
         private void Monetary_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            RadioButtonView.ViewMonetaryChartForm monetaryTreasureChartForm = new RadioButtonView.ViewMonetaryChartForm();
+            ButtonView.ViewMonetaryChartForm monetaryTreasureChartForm = new ButtonView.ViewMonetaryChartForm();
             monetaryTreasureChartForm.ShowDialog();
         }
 
         private void Gem_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            ViewGemChartForm viewGemChartForm = new ViewGemChartForm();
+            ButtonView.ViewGemChartForm viewGemChartForm = new ButtonView.ViewGemChartForm();
             viewGemChartForm.ShowDialog();
         }
 
@@ -32,7 +32,7 @@ namespace DungeonsAndDragonsMainWindow
 
         private void Magic_Item_Chartbtn_Click(object sender, RoutedEventArgs e)
         {
-            ViewMagicItemChartForm viewMagicItemChartForm = new ViewMagicItemChartForm();
+            ButtonView.ViewMagicItemChartForm viewMagicItemChartForm = new ButtonView.ViewMagicItemChartForm();
             viewMagicItemChartForm.ShowDialog();
         }
     }
