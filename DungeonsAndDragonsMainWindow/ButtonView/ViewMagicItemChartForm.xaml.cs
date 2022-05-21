@@ -13,8 +13,6 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
     {
         private readonly List<MonsterTypes> NoMagicItemsForTheseMonsters = new List<MonsterTypes>() 
         {MonsterTypes.J, MonsterTypes.K, MonsterTypes.L, MonsterTypes.M, MonsterTypes.P, MonsterTypes.Q, MonsterTypes.R, MonsterTypes.S, MonsterTypes.T};
-        private const string RemoveBoilerPlateMonsterType = "System.Windows.Controls.Button: Monster Type ";
-        private const string RemoveMoreBoilerPlate = "System.Windows.Controls.Button: ";
         GetCharts getCharts;
         MonsterTypes monsterTypes;
         MagicItemLogicRepository magicItemLogicRepository;
@@ -40,9 +38,9 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
         {
             Monsterlbl.Content = monsterTypes.ToString();
             Roll.IsEnabled = true;
-            IsTreasure.Content = NoMagicItemsForTheseMonsters.Contains(monsterTypes) ? "No Magic Items Here!" : "false";
+            IsTreasure.Content = NoMagicItemsForTheseMonsters.Contains(monsterTypes) ? "No Magic Items Here!" : Constants.False;
             listOfTreasure.Content = string.Empty;
-            NumberOfMagicItems.Content = "zero";
+            NumberOfMagicItems.Content = Constants.Zero;
             RevealMagicItems.IsEnabled = false;
             ActualRolledMagicItem.Content = string.Empty;
             ChoosenMagicItems.Content = string.Empty;
@@ -65,19 +63,18 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
         {
             if (magicItemLogicRepository.IsTreasureAvailable(monsterTypes))
             {
-                IsTreasure.Content = "true";
-                // Now we have to determine what magic items charts to roll on
+                IsTreasure.Content = Constants.True;
                 magicItemLogicRepository.WhatMagicItemsAreAvailable(monsterTypes);
                 listOfTreasure.Content = magicItemLogicRepository.List;
                 NumberOfMagicItems.Content = magicItemLogicRepository.NumberOfMagicItems.ToString();
                 RevealMagicItems.IsEnabled = true;
-                ActualRolledMagicItem.Content = "zero";// this did not fix the rolls either
+                ActualRolledMagicItem.Content = Constants.Zero;
             }
             else
             {
-                IsTreasure.Content = "false";
+                IsTreasure.Content = Constants.False;
                 listOfTreasure.Content = string.Empty;
-                NumberOfMagicItems.Content = "zero";
+                NumberOfMagicItems.Content = Constants.Zero;
                 RevealMagicItems.IsEnabled = false;
                 ActualRolledMagicItem.Content = string.Empty;
                 ChoosenMagicItems.Content = string.Empty;
@@ -97,19 +94,19 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
         {
             ActualMagicItemLoot acutalMagicItemLoot = new ActualMagicItemLoot(magicItemLogicRepository.Items.ToString());
             acutalMagicItemLoot.ShowDialog();
-            ActualRolledMagicItem.Content = "zero";
+            ActualRolledMagicItem.Content = Constants.Zero;
             RevealActualMagicItemLoot.IsEnabled = false;
         }     
         
         private void SetMonsterType(string monsterTypeString)
         {
-            string newMonsterTypeString = monsterTypeString.Replace(RemoveBoilerPlateMonsterType, "").Replace(":", "");
+            string newMonsterTypeString = monsterTypeString.Replace(Constants.BoilerPlateMonsterType, "").Replace(":", "");
             monsterTypes = getCharts.GetMonsterType(newMonsterTypeString); 
         }
 
         private MonetaryTreasureTypes SetMonetaryType(string monetaryTypeString)
         {
-            string newMonetaryTypeString = monetaryTypeString.Replace(RemoveMoreBoilerPlate, "").Replace(":", "");
+            string newMonetaryTypeString = monetaryTypeString.Replace(Constants.BoilerPlate, "").Replace(":", "");
             return getCharts.GetMonetaryTreasureType(newMonetaryTypeString);
         }
     }

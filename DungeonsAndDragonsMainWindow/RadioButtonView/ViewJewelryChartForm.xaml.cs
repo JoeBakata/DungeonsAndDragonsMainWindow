@@ -20,7 +20,6 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
         GetCharts ChartEngine;
         GeneralMethods generalMethods = new GeneralMethods();
         MonsterTypes monsterTypes;
-        const string Zero = "0";
 
         public void SelectionTypeDisplay(object sender, RoutedEventArgs e)
         {
@@ -77,70 +76,75 @@ namespace DungeonsAndDragonsMainWindow.RadioButtonView
             
             if (answer)
             {
-                Bracelet.Text = JewelryLogicRepository.Bracelet.ToString();
-                Pin.Text = JewelryLogicRepository.Pin.ToString();
-                Brooch.Text = JewelryLogicRepository.Brooch.ToString();
-                Earring.Text = JewelryLogicRepository.Earring.ToString();
-                Pendant.Text = JewelryLogicRepository.Pendant.ToString();
-                Necklace.Text = JewelryLogicRepository.Necklace.ToString();
-                Crown.Text = JewelryLogicRepository.Crown.ToString();
-                Sceptre.Text = JewelryLogicRepository.Sceptre.ToString();
+                PopulateJewelryTotalPieces(JewelryLogicRepository.Bracelet.ToString(), JewelryLogicRepository.Pin.ToString(), JewelryLogicRepository.Brooch.ToString(),
+                    JewelryLogicRepository.Earring.ToString(), JewelryLogicRepository.Pendant.ToString(), JewelryLogicRepository.Necklace.ToString(),
+                    JewelryLogicRepository.Crown.ToString(), JewelryLogicRepository.Sceptre.ToString());
 
-                Bracelet_GP_Value.Text = JewelryLogicRepository.BraceletGPValue.ToString();
-                Pin_GP_Value.Text = JewelryLogicRepository.PinGPValue.ToString();
-                Brooch_GP_Value.Text = JewelryLogicRepository.BroochGPValue.ToString();
-                Earring_GP_Value.Text = JewelryLogicRepository.EarringGPValue.ToString();
-                Pendant_GP_Value.Text = JewelryLogicRepository.PendantGPValue.ToString();
-                Necklace_GP_Value.Text = JewelryLogicRepository.NecklaceGPValue.ToString();
-                Crown_GP_Value.Text = JewelryLogicRepository.CrownGPValue.ToString();
-                Sceptre_GP_Value.Text = JewelryLogicRepository.SceptreGPValue.ToString();
+                PopulateJewelryGPValue(JewelryLogicRepository.BraceletGPValue.ToString(), JewelryLogicRepository.PinGPValue.ToString(),
+                    JewelryLogicRepository.BroochGPValue.ToString(), JewelryLogicRepository.EarringGPValue.ToString(), JewelryLogicRepository.PendantGPValue.ToString(),
+                    JewelryLogicRepository.NecklaceGPValue.ToString(), JewelryLogicRepository.CrownGPValue.ToString(), JewelryLogicRepository.SceptreGPValue.ToString());
 
-                Individual_Bracelet_GP_Value.Text = JewelryLogicRepository.IndividualBraceletGPValue;
-                Individual_Pin_GP_Value.Text = JewelryLogicRepository.IndividualPinGPValue;
-                Individual_Brooch_GP_Value.Text = JewelryLogicRepository.IndividualBroochGPValue;
-                Individual_Earring_GP_Value.Text = JewelryLogicRepository.IndividualEarringGPValue;
-                Individual_Pendant_GP_Value.Text = JewelryLogicRepository.IndividualPendantGPValue;
-                Individual_Necklace_GP_Value.Text = JewelryLogicRepository.IndividualNecklaceGPValue;
-                Individual_Crown_GP_Value.Text = JewelryLogicRepository.IndividualCrownGPValue;
-                Individual_Sceptre_GP_Value.Text = JewelryLogicRepository.IndividualSceptreGPValue;
+                PopulateIndividualJewelryGPValue(JewelryLogicRepository.IndividualBraceletGPValue, JewelryLogicRepository.IndividualPinGPValue,
+                    JewelryLogicRepository.IndividualBroochGPValue, JewelryLogicRepository.IndividualEarringGPValue,
+                    JewelryLogicRepository.IndividualPendantGPValue, JewelryLogicRepository.IndividualNecklaceGPValue,
+                    JewelryLogicRepository.IndividualCrownGPValue, JewelryLogicRepository.IndividualSceptreGPValue);
+
             }
             else
             {
-                TotalNumberOfJewelsValue.Text = "0";
-                Bracelet_GP_Value.Text = "0";
-                Pin_GP_Value.Text = "0";
-                Brooch_GP_Value.Text = "0";
-                Earring_GP_Value.Text = "0";
-                Pendant_GP_Value.Text = "0";
-                Necklace_GP_Value.Text = "0";
-                Crown_GP_Value.Text = "0";
-                Sceptre_GP_Value.Text = "0";
+                TotalNumberOfJewelsValue.Text = Constants.Zero;
 
-                Bracelet.Text = "0";
-                Pin.Text = "0";
-                Brooch.Text = "0";
-                Earring.Text = "0";
-                Pendant.Text = "0";
-                Necklace.Text = "0";
-                Crown.Text = "0";
-                Sceptre.Text = Zero;
+                PopulateJewelryTotalPieces(Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero);
 
-                Individual_Bracelet_GP_Value.Text = Zero;
-                Individual_Pin_GP_Value.Text = Zero;
-                Individual_Brooch_GP_Value.Text = Zero;
-                Individual_Earring_GP_Value.Text = Zero;
-                Individual_Pendant_GP_Value.Text = Zero;
-                Individual_Necklace_GP_Value.Text = Zero;
-                Individual_Crown_GP_Value.Text = Zero;
-                Individual_Sceptre_GP_Value.Text = Zero;
+                PopulateJewelryGPValue(Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero);
+
+                PopulateIndividualJewelryGPValue(Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero);
             }
         }
 
+        private void PopulateJewelryTotalPieces(string bracelet, string pin, string brooch, string earring, 
+            string pendant, string necklace, string crown, string sceptre)
+        {
+            Bracelet.Text = bracelet;
+            Pin.Text = pin;
+            Brooch.Text = brooch;
+            Earring.Text = earring;
+            Pendant.Text = pendant;
+            Necklace.Text = necklace;
+            Crown.Text = crown;
+            Sceptre.Text = sceptre;
+        }
+
+        private void PopulateJewelryGPValue(string bracelet, string pin, string brooch, string earring,
+            string pendant, string necklace, string crown, string sceptre)
+        {
+            Bracelet_GP_Value.Text = bracelet;
+            Pin_GP_Value.Text = pin;
+            Brooch_GP_Value.Text = brooch;
+            Earring_GP_Value.Text = earring;
+            Pendant_GP_Value.Text = pendant;
+            Necklace_GP_Value.Text = necklace;
+            Crown_GP_Value.Text = crown;
+            Sceptre_GP_Value.Text = sceptre;
+        }
+
+        private void PopulateIndividualJewelryGPValue(string bracelet, string pin, string brooch, string earring,
+            string pendant, string necklace, string crown, string sceptre)
+        {
+            Individual_Bracelet_GP_Value.Text = bracelet;
+            Individual_Pin_GP_Value.Text = pin;
+            Individual_Brooch_GP_Value.Text = brooch;
+            Individual_Earring_GP_Value.Text = earring;
+            Individual_Pendant_GP_Value.Text = pendant;
+            Individual_Necklace_GP_Value.Text = necklace;
+            Individual_Crown_GP_Value.Text = crown;
+            Individual_Sceptre_GP_Value.Text = sceptre;
+        }
         private void SetMonsterType(object sender, RoutedEventArgs e)
         {
             string monsterType = sender.ToString();
             monsterType = generalMethods.FilteredString(monsterType, Constants.BoilerPlateMonsterType);
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterType}";
+            Monster_Type_Selected.Content = $"{Constants.MonsterSelection}{monsterType}";
             Roll.IsEnabled = true;
             monsterTypes = generalMethods.GetMonsterType(monsterType, ChartEngine);
         }

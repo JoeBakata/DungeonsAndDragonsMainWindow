@@ -55,41 +55,36 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
 
         private void PopulateGemDisplays(GemLogicRepository logicRepository)
         {
-            Quartz.Content = logicRepository.Quartz.ToString();
-            Turquoise.Content = logicRepository.Turquoise.ToString();
-            Citrine.Content = logicRepository.Citrine.ToString();
-            Onyx.Content = logicRepository.Onyx.ToString();
-            Amber.Content = logicRepository.Amber.ToString();
-            Garnet.Content = logicRepository.Garnet.ToString();
-            Pearl.Content = logicRepository.Pearl.ToString();
-            Topaz.Content = logicRepository.Topaz.ToString();
-            Opal.Content = logicRepository.Opal.ToString();
-            Ruby.Content = logicRepository.Ruby.ToString();
-            Quartz_GP_Value.Content = logicRepository.QuartzGPValue;
-            Turquoise_GP_Value.Content = logicRepository.TurquoiseGPValue;
-            Citrine_GP_Value.Content = logicRepository.CitrineGPValue;
-            Onyx_GP_Value.Content = logicRepository.OnyxGPValue;
-            Amber_GP_Value.Content = logicRepository.AmberGPValue;
-            Garnet_GP_Value.Content = logicRepository.GarnetGPValue;
-            Pearl_GP_Value.Content = logicRepository.PearlGPValue;
-            Topaz_GP_Value.Content = logicRepository.TopazGPValue;
-            Opal_GP_Value.Content = logicRepository.OpalGPValue;
-            Ruby_GP_Value.Content = logicRepository.RubyGPValue;
+            PopulateGemTotal(logicRepository.Quartz.ToString(), logicRepository.Turquoise.ToString(), logicRepository.Citrine.ToString(),
+                logicRepository.Onyx.ToString(), logicRepository.Amber.ToString(), logicRepository.Garnet.ToString(), logicRepository.Pearl.ToString(),
+                logicRepository.Topaz.ToString(), logicRepository.Opal.ToString(), logicRepository.Ruby.ToString());
 
-            Quartz_Individual_GP_Value.Content = logicRepository.IndividualQuartzGPValue;
-            Turquoise_Individual_GP_Value.Content = logicRepository.IndividualTurquoiseGPValue;
-            Citrine_Individual_GP_Value.Content = logicRepository.IndividualCitrineGPValue;
-            Onyx_Individual_GP_Value.Content = logicRepository.IndividualOnyxGPValue;
-            Amber_Individual_GP_Value.Content = logicRepository.IndividualAmberGPValue;
-            Garnet_Individual_GP_Value.Content = logicRepository.IndividualGarnetGPValue;
-            Pearl_Individual_GP_Value.Content = logicRepository.IndividualPearlGPValue;
-            Topaz_Individual_GP_Value.Content = logicRepository.IndividualTopazGPValue;
-            Opal_Individual_GP_Value.Content = logicRepository.IndividualOpalGPValue;
-            Ruby_Individual_GP_Value.Content = logicRepository.IndividualRubyGPValue;
+            PopulateGemGPValue(logicRepository.QuartzGPValue, logicRepository.TurquoiseGPValue, logicRepository.CitrineGPValue, logicRepository.OnyxGPValue,
+                logicRepository.AmberGPValue, logicRepository.GarnetGPValue, logicRepository.PearlGPValue, logicRepository.TopazGPValue,
+                logicRepository.OpalGPValue, logicRepository.RubyGPValue);
 
+            // todo this is weird. the gem GP Value is an int. However, the gemtotal is also an int but we put .tostring() on it.  Why? Why not .toString() on GPValue?
+            //Quartz_GP_Value.Content = logicRepository.QuartzGPValue;
+            //Turquoise_GP_Value.Content = logicRepository.TurquoiseGPValue; 
+            //Citrine_GP_Value.Content = logicRepository.CitrineGPValue;
+            //Onyx_GP_Value.Content = logicRepository.OnyxGPValue;
+            //Amber_GP_Value.Content = logicRepository.AmberGPValue;
+            //Garnet_GP_Value.Content = logicRepository.GarnetGPValue;
+            //Pearl_GP_Value.Content = logicRepository.PearlGPValue;
+            //Topaz_GP_Value.Content = logicRepository.TopazGPValue;
+            //Opal_GP_Value.Content = logicRepository.OpalGPValue;
+            //Ruby_GP_Value.Content = logicRepository.RubyGPValue;
+
+            PopulateIndividualGemGPValue(logicRepository.IndividualQuartzGPValue, logicRepository.IndividualTurquoiseGPValue,
+                logicRepository.IndividualCitrineGPValue, logicRepository.IndividualOnyxGPValue, logicRepository.IndividualAmberGPValue,
+                logicRepository.IndividualGarnetGPValue, logicRepository.IndividualPearlGPValue, logicRepository.IndividualTopazGPValue,
+                logicRepository.IndividualOpalGPValue, logicRepository.IndividualRubyGPValue);
         }
         private void ZeroOutGemDisplays()
         {
+            PopulateGemTotal(Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero,
+                Constants.Zero, Constants.Zero, Constants.Zero, Constants.Zero);
+
             Quartz_GP_Value.Content = Constants.Zero;
             Turquoise_GP_Value.Content = Constants.Zero;
             Citrine_GP_Value.Content = Constants.Zero;
@@ -100,17 +95,6 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
             Topaz_GP_Value.Content = Constants.Zero;
             Opal_GP_Value.Content = Constants.Zero;
             Ruby_GP_Value.Content = Constants.Zero;
-
-            Quartz.Content = Constants.Zero;
-            Turquoise.Content = Constants.Zero;
-            Citrine.Content = Constants.Zero;
-            Onyx.Content = Constants.Zero;
-            Amber.Content = Constants.Zero;
-            Garnet.Content = Constants.Zero;
-            Pearl.Content = Constants.Zero;
-            Topaz.Content = Constants.Zero;
-            Opal.Content = Constants.Zero;
-            Ruby.Content = Constants.Zero;
 
             Quartz_Individual_GP_Value.Content = Constants.Zero;
             Turquoise_Individual_GP_Value.Content = Constants.Zero;
@@ -124,8 +108,53 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
             Ruby_Individual_GP_Value.Content = Constants.Zero;
 
             TotalNumberOfGemsValue.Text = Constants.Zero;
-
         }
+
+        private void PopulateGemTotal(string quartz, string turquoise, string citrine, string onyx, string amber, string garnet, string pearl,
+            string topaz, string opal, string ruby)
+        {
+            Quartz.Content = quartz;
+            Turquoise.Content = turquoise;
+            Citrine.Content = citrine;
+            Onyx.Content = onyx;
+            Amber.Content = amber;
+            Garnet.Content = garnet;
+            Pearl.Content = pearl;
+            Topaz.Content = topaz;
+            Opal.Content = opal;
+            Ruby.Content = ruby;
+        }
+
+        private void PopulateGemGPValue(int quartz, int turquoise, int citrine, int onyx, int amber, int garnet, int pearl,
+            int topaz, int opal, int ruby)
+        {
+            Quartz_GP_Value.Content = quartz;
+            Turquoise_GP_Value.Content = turquoise;
+            Citrine_GP_Value.Content = citrine;
+            Onyx_GP_Value.Content = onyx;
+            Amber_GP_Value.Content = amber;
+            Garnet_GP_Value.Content = garnet;
+            Pearl_GP_Value.Content = pearl;
+            Topaz_GP_Value.Content = topaz;
+            Opal_GP_Value.Content = opal;
+            Ruby_GP_Value.Content = ruby;
+        }
+
+        private void PopulateIndividualGemGPValue(string quartz, string turquoise, string citrine, string onyx, string amber, string garnet, string pearl,
+            string topaz, string opal, string ruby)
+        {
+            Quartz_Individual_GP_Value.Content = quartz;
+            Turquoise_Individual_GP_Value.Content = turquoise;
+            Citrine_Individual_GP_Value.Content = citrine;
+            Onyx_Individual_GP_Value.Content = onyx;
+            Amber_Individual_GP_Value.Content = amber;
+            Garnet_Individual_GP_Value.Content = garnet;
+            Pearl_Individual_GP_Value.Content = pearl;
+            Topaz_Individual_GP_Value.Content = topaz;
+            Opal_Individual_GP_Value.Content = opal;
+            Ruby_Individual_GP_Value.Content = ruby;
+        }
+
         private void SetGemLabel(object sender, RoutedEventArgs e)
         {
             string gemType = sender.ToString();
@@ -141,7 +170,7 @@ namespace DungeonsAndDragonsMainWindow.ButtonView
         }
         private void RollButtonEnabledByMonsterSelection(MonsterTypes monsterTypes)
         {
-            Monster_Type_Selected.Content = $"You selected monster type: {monsterTypes}";
+            Monster_Type_Selected.Content = $"{Constants.MonsterSelection}{monsterTypes}";
             Roll.IsEnabled = true;
         }
     }

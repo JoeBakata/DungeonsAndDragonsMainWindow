@@ -8,7 +8,7 @@
         Title="ViewJewelryChartForm" Height="1000" Width="1200">
     <Grid> 
         <!-- startOf Labels -->
-        <Label Content="Jewlery_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,100,0,0" Height="25" />
+        <Label Content="Jewelry_Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,100,0,0" Height="25" />
         <Label Content="Minimum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,150,0,0"/>
         <Label Content="Maximum_GP_Value:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,180,0,0"/>
         <Button x:Name="Roll" Content="Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,210,0,0" Click="Roll_Click" IsEnabled="False"/>
@@ -18,7 +18,7 @@
         <!-- endOf Labels -->  <!-- Why do the above Label have no name? We gave all other labels in other forms names.  -->
         
         <!-- startOf Changing values -->
-        <TextBlock x:Name="Jewlery_Typelbl" Text="JewleryType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,100,0,0" Height="25" />
+        <TextBlock x:Name="Jewlery_Typelbl" Text="JewelryType:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,100,0,0" Height="25" />
         <TextBlock x:Name="Minimum_GP_Valuelbl" Text="MinimumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,150,0,0"/>
         <TextBlock x:Name="Maximum_GP_Valuelbl" Text="MaximumGPValue:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,180,0,0"/>
         <TextBlock x:Name="ThereAreJewelsBoolean" Text="BooleanValue" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="350,240,0,0" Width="95" Height="25" />

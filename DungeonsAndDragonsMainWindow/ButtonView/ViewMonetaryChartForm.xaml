@@ -7,42 +7,56 @@
         mc:Ignorable="d"
 Title="MonetaryTreasureChartForm" Height="1000" Width="1200">
     <Grid>
-        <Label x:Name="Treasure_NameLbl" Content="Treasure Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="498,183,0,0"/>
-        <Label x:Name="DiceLbl" Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="498,225,0,0"/>
-        <Label x:Name="Treasure_AmountLbl" Content="Treasure Amount:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="498,267,0,0"/>
-        <Label x:Name="PercentLbl" Content="Percent:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="498,314,0,0" Height="31"/>
-        <Button x:Name="Copperbtn" Content="Copper:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,15,0,0" Click="GetMonetaryType"/>
-        <Button x:Name="Silverbtn" Content="Silver:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,75,0,0" Click="GetMonetaryType"/>
-        <Button x:Name="Electrumbtn" Content="Electrum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,130,0,0" Click="GetMonetaryType"/>
-        <Button x:Name="Goldbtn" Content="Gold:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,183,0,0" Click="GetMonetaryType"/>
-        <Button x:Name="Platinumbtn" Content="Platinum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,225,0,0" Click="GetMonetaryType"/>
-        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="15,15,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="15,75,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,130,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,160,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,190,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,220,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,250,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,280,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,310,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,340,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,370,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,400,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,430,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,460,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,490,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,520,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,550,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,580,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,610,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,640,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,670,0,0" Click="GetMonsterType"/>
-        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="25,700,0,0" Click="GetMonsterType"/>
-        <Label Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="447,225,0,0" Height="37"/>
-        <Label Content="Treasure Amount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,267,0,0"/>
-        <Label Content="Percent" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="431,314,0,0"/>
-        <Label Content="Treasure Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="391,183,0,0"/>
-        <Label x:Name="Monster_Typelbl" Content="Monster Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,124,0,0"/>
+        <!-- startOf LabelGoesHere -->
+        <Label x:Name="Treasure_NameLbl" Content="Treasure Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,60,0,0"/>
+        <Label x:Name="DiceLbl" Content="Dice:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,90,0,0"/>
+        <Label x:Name="Treasure_AmountLbl" Content="Treasure Amount:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,120,0,0"/>
+        <Label x:Name="PercentLbl" Content="Percent:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,150,0,0" Height="31"/>
+        <!-- endOf LabelGoesHere -->
+        
+        <!-- startOf monetaryTypes -->
+        <Button x:Name="Copperbtn" Content="Copper:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,30,0,0" Click="GetMonetaryType"/>
+        <Button x:Name="Silverbtn" Content="Silver:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,60,0,0" Click="GetMonetaryType"/>
+        <Button x:Name="Electrumbtn" Content="Electrum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,90,0,0" Click="GetMonetaryType"/>
+        <Button x:Name="Goldbtn" Content="Gold:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,120,0,0" Click="GetMonetaryType"/>
+        <Button x:Name="Platinumbtn" Content="Platinum:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,150,0,0" Click="GetMonetaryType"/>
+        <!-- endOf monetaryTypes -->
+        
+        <!-- startOf monsterTypesA-K -->
+        <Button x:Name="Monster_Type_Abtn" Content="MonsterTypeA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,30,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Bbtn" Content="MonsterTypeB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,60,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Cbtn" Content="MonsterTypeC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,90,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Dbtn" Content="MonsterTypeD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,120,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Ebtn" Content="MonsterTypeE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,150,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Fbtn" Content="MonsterTypeF" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,180,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Gbtn" Content="MonsterTypeG" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,210,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Hbtn" Content="MonsterTypeH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,240,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Ibtn" Content="MonsterTypeI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,270,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Jbtn" Content="MonsterTypeJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,300,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Kbtn" Content="MonsterTypeK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="430,330,0,0" Click="GetMonsterType"/>
+        <!-- endOf monsterTypesA-K -->
+        
+        <!-- startOf monsterTypesL-V -->
+        <Button x:Name="Monster_Type_Lbtn" Content="MonsterTypeL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,30,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Mbtn" Content="MonsterTypeM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,60,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Nbtn" Content="MonsterTypeN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,90,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Obtn" Content="MonsterTypeO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,120,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Pbtn" Content="MonsterTypeP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,150,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Qbtn" Content="MonsterTypeQ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,180,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Rbtn" Content="MonsterTypeR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,210,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Sbtn" Content="MonsterTypeS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,240,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Tbtn" Content="MonsterTypeT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,270,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Ubtn" Content="MonsterTypeU" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,300,0,0" Click="GetMonsterType"/>
+        <Button x:Name="Monster_Type_Vbtn" Content="MonsterTypeV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="580,330,0,0" Click="GetMonsterType"/>
+        <!-- endOf monsterTypesL-V -->
+
+        <!-- startOf SOMELABELGOESHERE -->
+        <Label x:Name="Monster_Typelbl" Content="Monster Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,30,0,0"/>
+        <Label Content="Treasure Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,60,0,0"/>
+        <Label Content="Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,90,0,0" Height="37"/>
+        <Label Content="Treasure Amount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,120,0,0"/>
+        <Label Content="Percent" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,150,0,0"/>
+        <!-- endOf SomeLabel -->
 
     </Grid>
 </Window>
